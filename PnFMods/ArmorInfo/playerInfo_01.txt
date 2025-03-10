@@ -1,0 +1,111 @@
+
+[PlayerInfo]
+<Dummy>: {'crewParams': [3978471248L, [None, None, None, None]], 'isLeaver': False, 
+
+'shipInfo': <Dummy>: {'pathPreview': '../ship_previews/PFSD110.png', 'pathDeadIcon': '../ship_dead_icons/PFSD110.png', 'subtypeIDS': 'IDS_DESTROYER', 'id': 4179507024L, 'group': 'upgradeable', 'pathBigIcon': '../ship_bars/PFSD110/h.png', 'maxHealth': 25400, 
+
+'params': <Dummy>: {'permoflages': None, 'battleSignalsModifiersOrder': None, 'A_Hull': None, 'Cameras': None, 'A_Directors': None, 'A1_Artillery': None, 'steerDist': None, 'peculiarity': None, 'AIParams': None, 'peculiarityEffects': None, 'typeinfo': None, 'id': None, 'A1_Torpedoes': None, 'index': None, 'group': None, 'nativePermoflage': None, 'A1_FireControl': None, 'originShipName': None, 'custom': None, 'steerAngle': None, 'defaultCrew': None, 'battleSignalsOrder': None, 'maxEquippedFlags': None, 'ShipUpgradeInfo': None, 'shipBattleCards': None, 'peculiarityModels': None, 'alternateFlags': None, 'tags': None, 'needShowProjectYear': None, 'nativeMultiboost': None, 'UnderwaterCamera': None, 'Specials': None, 'A_Engine': None, 'A_DepthChargeGuns': None, 'canEquipCamouflage': None, 'BattleUpgradeInfo': None, 'unpeculiarShip': None, 'subnation': None, 'isPaperShip': None, 'multiboosts': None, 'name': None, 'peculiarityFlag': None, 'level': None, 'A_AirDefense': None, 'DockCamera': None, 'A_Radars': None, 'ShipAbilities': None, 'apDamageLimitCoeff': None, 'flagsScale': None, 'usePeculiaritySounds': None, 'navalFlag': None, 'nationFlagScale': None, 'canCharge': None}, 'subtype': 'Destroyer', 'pathTinyIcon': '../ship_icons/PFSD110.png', 'levelIcon': '', 'nation': 'France', 'shortName': 'PFSD110', 'pathBigPreview': '../ship_previews/PFSD110_big.png', 'name': 'PFSD110_Kleber', 'subnation': '', 'pathOwnTinyIcon': '../ship_own_icons/PFSD110.png', 'level': 10, 'screenPath': '../../gui/ship_icons/PFSD110.png', 'pathBigIconBg': '../ship_bars/PFSD110/h_bg.png', 'pathPreviewDS': '../ship_previews_ds/PFSD110.png', 'nameIDS': 'IDS_PFSD110', 'shipScreenIDS': 'IDS_PFSD110'}, 'clanID': 2000019708, 'dogTag': [4273327024L, 0, 0, 0, 0], 'isBot': False, 'shipId': 848765, 'avatarId': 848764, 'id': 537655079, 'prebattleIndex': 0, 'ttkStatus': False, 'realm': 'ASIA', 'preBattleIdOnStart': 0, 'clanColor': 12511165, 'killedBuildingsCount': 0, 
+
+'playerMode': <Dummy>: {'playerModeType': 0, 'observedTeamId': 0}, 'maxHealth': 25400, 'preBattleSign': 0, 'isAbuser': False, 
+
+'shipConfig': <Dummy>: {'_componentsMap': {'airDefense': None, 'abilities': None, 'shield': None, 'artillery': None, 'diveBomber': None, 'atba': None, 'wcs': None, 'flightControl': None, 'skipBomber': None, 'torpedoBomber': None, 'airArmament': None, 'cameras': None, 'underwaterCamera': None, 'airSupport': None, 'hull': None, 'impulseLasers': None, 'engine': None, 'radars': None, 'torpedoes': None, 'scout': None, 'aiParams': None, 'waves': None, 'airshipPlane': None, 'innateSkills': None, 'pinger': None, 'fighter': None, 'phaserLasers': None, 'fireControl': None, 'specials': None, 'chargeLasers': None, 'directors': None, 'photonTorpedoes': None, 'axisLaser': None, 'auxiliaryPlane': None, 'finders': None, 'depthCharges': None}, 'isOwned': True, 
+
+'ecoboostSlots': <Dummy>: {'autoBuy': None, 'slots': None}, 'allSlotSystems': (<mc30c18f1.ModernizationSlots object at 0x0000010C1889ECF8>, <mc30c18f1.ExteriorSlots object at 0x0000010C1889EC88>, <mc30c18f1.AbilitySlots object at 0x0000010C1889EC18>, <mc30c18f1.EnsignSlots object at 0x0000010C1889EBE0>, <mc30c18f1.EcoboostSlots object at 0x0000010C1889EB70>, <mc30c18f1.BattleCardSlots object at 0x0000010C1889EB00>), '_navalFlag': None, 'appliedExternalConfig': 0, 'shipId': 4179507024L, 
+
+'shipParams': <Dummy>: {'pathPreview': None, 'pathDeadIcon': None, 'subtypeIDS': None, 'id': None, 'group': None, 'pathBigIcon': None, 'maxHealth': None, 'params': None, 'subtype': None, 'pathTinyIcon': None, 'levelIcon': None, 'nation': None, 'shortName': None, 'pathBigPreview': None, 'name': None, 'subnation': None, 'pathOwnTinyIcon': None, 'level': None, 'screenPath': None, 'pathBigIconBg': None, 'pathPreviewDS': None, 'nameIDS': None, 'shipScreenIDS': None}, 'lastBoardedCrew': 0, 'userConfig': {'_Artillery': None, '_Torpedoes': None, '_Suo': None, '_Engine': None, '_Hull': None},
+
+ 'exteriorSlots': <Dummy>: {'autoBuy': None, 'slots': None, 'colorSchemes': None}, '_unitsCount': {3349131088L: None, 3349000016L: None, 3348541264L: None, 3348901712L: None, 3348508496L: None}, 
+ 
+ 'modernizationSlots': <Dummy>: {'autoBuy': None, 'slots': None}, 'isValid': True, 
+ 
+ 'ensignSlots': <Dummy>: {'autoBuy': None, 'slots': None}, 
+ 
+ 'abilitySlots': <Dummy>: {'autoBuy': None, 'slots': None}, 'name': 'PFSD110_Kleber',
+ 
+  'shipUpgradeInfo': <Dummy>: {'costXP': None, 'costCR': None, 'nextShips': None, 'outerLinksInited': None, 'prevUserComponents': None, 'shipId': None, 'previousShips': None, 'errors': None, 'group': None, 'outletComponents': None, 'costGold': None, 'stock': None, 'isPremium': None, 'userComponents': None, 'costSaleGold': None, 'isValid': None, 'nation': None, 'subnation': None, 'name': None, 'level': None, 'subtype': None, 'unlockRequirements': None}, '_activeComponentsMap': {'engine': None, 'airDefense': None, 'fireControl': None, 'hull': None, 'artillery': None, 'torpedoes': None, 'directors': None, 'radars': None, 'depthCharges': None}, 'err': 'not initialised', 'level': 10, 
+  
+  'battleCardSlots': <Dummy>: {'autoBuy': None, 'slots': None, 'maxSlotsByMatchGroup': None}, 'exp': 0}, 'shipConfigDump': '\x01\x00\x00\x00P7\x1e\xf92\x00\x00\x00\x0f\x00\x00\x00P/\x9c\xc7P\xaf\x9f\xc7P/\x96\xc7P\xaf\x96\xc7P\xaf\x9d\xc7\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\xb0\xcf\x12\xfe\xb0\xcf\xa2\xfb\xb0\xcf\xe2\xfd\xb0\xcfr\xfe\xb0\xcfB\xfe\xb0\xcf"\xff\x01\x00\x00\x00P\xef\xb6\xe9\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\xb0\x9fb\xff\xb0\x9f\x92\xfe\xb0\x9f\x02\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\xb0\xef\xfd\xf8\xb0\xef\xad\xf4\x04\x00\x00\x00\x00\x00\x00\x00\xb0\xef\xaf\xfe\x00\x00\x00\x00\x00\x00\x00\x00\x1e\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x0f\x00\x00\x00', 'clanTag': u'A-1', 'isHidden': False, 'isTDamager': False, 'isAlive': True, 'antiAbuseEnabled': True, 'prebattleId': 0, 'hTTKStatus': False, 'accountDBID': 2024412218, 'isConnected': True, 
+  
+  'camouflageInfo': <Dummy>: {}, 'isTKiller': False, 'isPreBattleOwner': False, 'shipParamsId': 4179507024L, 'shipComponents': {'airDefense': 'A_AirDefense', 'abilities': 'AbilitiesDefault', 'shield': 'shieldDefault', 'artillery': 'A1_Artillery', 'diveBomber': 'DiveBomberTypeDefault', 'atba': 'ATBADefault', 'wcs': 'WeaponControlSystemDefault', 'flightControl': 'FlightControlDefault', 'skipBomber': 'SkipBomberTypeDefault', 'torpedoBomber': 'TorpedoBomberTypeDefault', 'airArmament': 'AirArmamentDefault', 'cameras': 'Cameras', 'underwaterCamera': 'UnderwaterCamera', 'airSupport': 'airSupportDefault', 'hull': 'A_Hull', 'impulseLasers': 'ImpulseLasersDefault', 'engine': 'A_Engine', 'radars': 'A_Radars', 'torpedoes': 'A1_Torpedoes', 'scout': 'ScoutTypeDefault', 'aiParams': 'AIParams', 'waves': 'WaveArtilleryDefault', 'airshipPlane': 'AirshipPlaneTypeDefault', 'innateSkills': 'InnateSkillsDefault', 'pinger': 'PingerGunDefault', 'fighter': 'FighterTypeDefault', 'phaserLasers': 'PhaserLasersDefault', 'fireControl': 'A1_FireControl', 'specials': 'SpecialsDefault', 'chargeLasers': 'ChargeLasersDefault', 'directors': 'A_Directors', 'photonTorpedoes': 'PhotonTorpedoesDefault', 'axisLaser': 'AxisLaserDefault', 'auxiliaryPlane': 'AuxiliaryPlaneTypeDefault', 'finders': 'FindersDefault', 'depthCharges': 'A_DepthChargeGuns'}, 'name': 'Amatsukaze_need_kaini', 
+  
+  'shipGameData': <Dummy>: {'buoyancyFromServer': 200000.0, 'yawFromServer': 2.356194496154785, 'height': 1.6234999895095825, 'teamId': 0, 'positionFromServer': None, 'pitch': 0.0, 'buoyancy': 200000.0, 'speed': 0.0, 'healthFromServer': 25400.0, 'yaw': 2.356194496154785, 'maxHealth': None, 'paramsId': 4179507024L, 'health': 25400.0, 'shipConfig': None, 'visionFlag': 2, 'velocity': None, 
+  
+  'speedServerLerper': <Dummy>: {'lastValue': None, 'nextValue': None, 'timeSpent': None, 'currentValue': None, 'delta': None}, 'regenerationHealth': 0.0, 'isShipVisible': 1, 'isVisible': True, 'position': None, 'velocityFromServer': None}, 'teamId': 0, 'fragsCount': 0,
+  
+   'vehicleParams': <Dummy>: {
+    
+    'airDefense': <Dummy>: {'compName': None, 'burstTracerCountMultiplier': None, 'sectors': None, 'burstTracerScatterMultiplier': None, 'burstDuration': None, 'components': None, 'prioritySectorPhases': None, 'ownerlessTracesScatterCoefficient': None, 'prioritySectorCooldown': None}, 
+    
+    'abilities': <Dummy>: {'compName': None, 'components': None}, 
+    
+    'shield': <Dummy>: {'regenerationEffect': None, 'destroyEffect': None, 'compName': None, 'regenFrequency': None, 'regenerationDelay': None, 'regenCoeff': None, 'hitEffect': None, 'components': None, 'maxHp': None},
+    
+     'artillery': <Dummy>: {'maxDist': None, 'minDistV': None, 'compName': None, 'targetWeightMinDist': None, 'targetWeightMinHealth': None, 'taperDist': None, 'targetWeightMaxDist': None, 'ammoPool': None, 'normalDistribution': None, 'targetWeightHealth': None, 'targetWeightIncoming': None, 'targetWeightMaxHealth': None, 'targetWeightOutcoming': None, 'components': None, 'targetWeightMyAttacker': None, 'sigmaCount': None, 'minDistH': None, 'targetWeightDist': None, 'targetWeightAllyAttacker': None, 'artificialOffset': None, 'targetWeightYaw': None}, 'preinstalledBattleCards': [None, None, None, None],
+     
+      'shipInfo': <Dummy>: {'pathPreview': None, 'pathDeadIcon': None, 'subtypeIDS': None, 'id': None, 'group': None, 'pathBigIcon': None, 'maxHealth': None, 'params': None, 'subtype': None, 'pathTinyIcon': None, 'levelIcon': None, 'nation': None, 'shortName': None, 'pathBigPreview': None, 'name': None, 'subnation': None, 'pathOwnTinyIcon': None, 'level': None, 'screenPath': None, 'pathBigIconBg': None, 'pathPreviewDS': None, 'nameIDS': None, 'shipScreenIDS': None}, 
+      
+      'diveBomber': <Dummy>: {'compName': None, 'components': None, 'planes': None}, 
+      
+      'atba': <Dummy>: {'maxDist': None, 'minDistV': None, 'sigmaCount': None, 'targetWeightMinHealth': None, 'targetWeightMinDist': None, 'taperDist': None, 'targetWeightMaxDist': None, 'targetWeightHealth': None, 'targetWeightIncoming': None, 'targetWeightMaxHealth': None, 'components': None, 'targetWeightOutcoming': None, 'compName': None, 'targetWeightDist': None, 'minDistH': None, 'artificialOffset': None, 'targetWeightYaw': None}, 
+      
+      'wcs': <Dummy>: {'compName': None, 'components': None}, 
+      
+      'flightControl': <Dummy>: {'airSupportSquadrons': None, 'squadrons': None, 'compName': None, 'consumablePlanesReserve': None, 'consumableSquadrons': None, 'planesReserveAssignment': None, 'prepareTimeFactor': None, 'hasConsumablePlanes': None, 'onlyOneSimultaneous': None, 'components': None, 'airSupportPlanesReserve': None, 'airships': None}, 
+      
+      'skipBomber': <Dummy>: {'compName': None, 'components': None, 'planes': None}, 
+      
+      'torpedoBomber': <Dummy>: {'compName': None, 'components': None, 'planes': None}, 
+      
+      'airArmament': <Dummy>: {'jointLaunchDelay': None, 'deckPlaceCount': None, 'isIndependentLaunchpad': None, 'auraCoeff': None, 'planesReserveCapacity': None, 'turnCameraToCatapultNode': None, 'isParallelLaunch': None, 'launchpadType': None, 'launchPrepareTime': None, 'jointLaunchOffset': None, 'components': None, 'jointLaunchPlaneCount': None, 'compName': None}, 
+      
+      'cameras': <Dummy>: {'inertialRollCoef': None, 'smartZoomAngleCoef': None, 'rockingCompensationCoef': None, 'compName': None, 'components': None}, 
+      
+      'underwaterCamera': <Dummy>: {'shipWidthCoeff': None, 'compName': None, 'castZoom': None, 'shipLengthCoeff': None, 'shipHeigthCoeff': None, 'cameraDragOffTime': None, 'maxZoomLength': None, 'components': None, 'cameraDragOnTime': None, 'cameraDragOff': None}, 'shipDestructionID': 0, 'paramsId': 4179507024L, 'modernization': None, 
+      
+      'airSupport': <Dummy>: {'maxDist': None, 'compName': None, 'reloadTime': None, 'timeBetweenShots': None, 'flyAwayTime': None, 'climbAngle': None, 'autoUsage': None, 'timeFromHeaven': None, 'chargesNum': None, 'components': None, 'minDist': None, 'maxPlaneFlightDist': None, 'planeName': None}, 
+      
+      'hull': <Dummy>: {'visibilityFactorInSmoke': None, 'visibilityCoeffUnderwaterDepthsByPlane': None, 'friction': None, 'effectOnDetonatePowderChamber': None, 'tonnage': None, 'effectOnFloodDeath': None, 'numOfParts': None, 'visibilityCoefPingerByPlane': None, 'armourDeck': None, 'effectShipCracksAndOilPuddle': None, 'coolingOffSpeed': None, 'compName': None, 'defaultCamouflage': None, 'elasticity': None, 'deathDetonateEffect': None, 'buoyancyHighlightEffect': None, 'shipWheelsPresent': None, 'acidDuration': None, 'foghornEffect': None, 'pushingMinRudderAngle': None, 'sinkingEffects': None, 'enemyEngineEffects': None, 'baseUnderwaterPitchAngle': None, 'pushingMaxRudderAngle': None, 'deathUnderWaterBubblesEffects': None, 'visibilityCoefFire': None, 'crackCoords': None, 'deathSoundEvent': None, 'buoyancyStopLineMinSpeedCoeff': None, 'maxBuoyancySpeed': None, 'maxRudderAngle': None, 'deathBubblesEffect': None, 'armor': None, 'rudderPower': None, 'oilLeakIntervalInvisible': None, 'unpeculiarCamouflage': None, 'underwaterRollEffect': None, 'torpedoImpactMassImpulseCoeff': None, 'health': None, 'sinkStartTime': None, 'visibilityCoefGKInSmoke': None, 'size': None, 'boilerExplosionPostDeath': None, 'repairingCoeff': None, 'model': None, 'deathFireEffect': None, 'deathFountainsEffect': None, 'visibilityFactor': None, 'shipBodySunkDifferenceCoeff': None, 'barbettes': None, 'isFakeSubmarine': None, 'wildFireDuration': None, 'visibilityCoefFireByPlane': None, 'maxHeatValue': None, 'consumablePlaneTypes': None, 'finderBase': None, 'buoyancyEffects': None, 'underwaterMaxRudderAngle': None, 'effectOnDeath': None, 'buoyancyStopLine': None, 'deathPostFireEffect': None, 'armourExtremities': None, 'deathFoamEffect': None, 'turningRadius': None, 'visibilityCoefGKByPlane': None, 'visibilityCoeffUnderwaterDepths': None, 'oilLeakStartDelay': None, 'deathShellEffect': None, 'backwardMovementDragCoef': None, 'buoyancy': None, 'heightIntensityEffects': None, 'deathPlaneEffect': None, 'smokeScanRadius': None, 'deepwaterVisionCoeff': None, 'visibilityCoefGK': None, 'visibilityCoefAirDefense': None, 'deathTorpedoEffect': None, 'burnNodes': None, 'draft': None, 'deepwaterVisionToPlaneCoeff': None, 'buoyancyRudderResetTime': None, 'effectCauldronExplosion': None, 'customMiscs': None, 'rudderTime': None, 'maxBuoyancyLevel': None, 'startHealthCoeff': None, 'deathNodes': None, 'deathFaultEffect': None, 'chimneyMaxAngle': None, 'deckHeight': None, 'canReceiveWildFire': None, 'flagPoleModelName': None, 'deathFumingEffect': None, 'unpeculiarCamouflageColorSchemeId': None, 'shipPartSunkDifferenceCoeff': None, 'speedCoef': None, 'rollEffect': None, 'sinkTime': None, 'buoyancyRudderTime': None, 'enemyVisibilityCoeffByDepth': None, 'surfaceOilLeakEffect': None, 'toMineVisionDistance': None, 'visibilityCoefPinger': None, 'propellerEffectReversed': None, 'visibilityFactorsBySubmarine': None, 'acidDamage': None, 'buoyancyStates': None, 'armourCit': None, 'visibilityCoefATBAByPlane': None, 'wildFireDamage': None, 'timeBeforeDeathEffect': None, 'dockYOffset': None, 'finderHeight': None, 'floodNodes': None, 'timeBeforeCauldronExplosion': None, 'bodyType': None, 'canReceiveAcid': None, 'armourCas': None, 'shipBodySunkStartMassCoeff': None, 'visionDistance': None, 'deathSettings': None, 'sideDragCoef': None, 'heatChangeValue': None, 'shipPartSunkStartMassCoeff': None, 'regenerationHPSpeed': None, 'minVisionDistance': None, 'enginePower': None, 'maxSpeed': None, 'isBlind': None, 'visibilityFactorByPlane': None, 'backwardPowerCoef': None, 'propellerEffect': None, 'oilLeakDuration': None, 'mass': None, 'components': None, 'startHealthToRegenerationCoeff': None, 'buoyancyRudderDepths': None, 'visibilityCoefPingerInSmoke': None, 'effects': None},
+      
+       'impulseLasers': <Dummy>: {'maxDist': None, 'minDistV': None, 'compName': None, 'targetWeightMinDist': None, 'targetWeightMinHealth': None, 'taperDist': None, 'targetWeightMaxDist': None, 'ammoPool': None, 'normalDistribution': None, 'targetWeightHealth': None, 'targetWeightIncoming': None, 'targetWeightMaxHealth': None, 'targetWeightOutcoming': None, 'components': None, 'targetWeightMyAttacker': None, 'sigmaCount': None, 'minDistH': None, 'targetWeightDist': None, 'targetWeightAllyAttacker': None, 'artificialOffset': None, 'targetWeightYaw': None}, 
+       
+       'engine': <Dummy>: {'sound': None, 'compName': None, 'backwardSpeedOnFlood': None, 'backwardEngineForsag': None, 'damagedEnginePowerMultiplier': None, 'forwardEngineForsagMaxSpeed': None, 'backwardEngineForsagMaxSpeed': None, 'speedCoef': None, 'histEnginePower': None, 'forwardEngineForsag': None, 'components': None, 'damagedEnginePowerTimeMultiplier': None, 'forwardEngineUpTime': None, 'engineType': None, 'forwardSpeedOnFlood': None, 'backwardEngineUpTime': None}, 
+       
+       'radars': <Dummy>: {'compName': None, 'components': None}, 'consumables': {'crashCrew': None, 'artilleryBoosters': None, 'speedBoosters': None}, 
+       
+       'torpedoes': <Dummy>: {'compName': None, 'components': None, 'loaders': None, 'useGroups': None, 'useOneShot': None, 'treatAsPulsePhaserForUI': None, 'groups': None}, 
+       
+       'scout': <Dummy>: {'compName': None, 'components': None, 'planes': None}, 
+       
+       'aiParams': <Dummy>: {'max_distance': None, 'compName': None, 'min_distance': None, 'components': None, 'default_distance': None}, 
+       
+       'waves': <Dummy>: {'maxDist': None, 'minDist': None, 'compName': None, 'components': None}, 
+       
+       'airshipPlane': <Dummy>: {'compName': None, 'components': None, 'planes': None}, 
+       
+       'innateSkills': <Dummy>: {'compName': None, 'components': None},
+       
+        'info': <Dummy>: {'pathPreview': None, 'pathDeadIcon': None, 'subtypeIDS': None, 'id': None, 'group': None, 'pathBigIcon': None, 'maxHealth': None, 'params': None, 'subtype': None, 'pathTinyIcon': None, 'levelIcon': None, 'nation': None, 'shortName': None, 'pathBigPreview': None, 'name': None, 'subnation': None, 'pathOwnTinyIcon': None, 'level': None, 'screenPath': None, 'pathBigIconBg': None, 'pathPreviewDS': None, 'nameIDS': None, 'shipScreenIDS': None}, 
+        
+        'pinger': <Dummy>: {'isCollideWithTerrain': None, 'isWithHitEffects': None, 'compName': None, 'waveReloadTime': None, 'waveDistance': None, 'waveParams': None, 'isCollideWithTeammates': None, 'sectorParams': None, 'rotationSpeed': None, 'isResettable': None, 'maxWaveHits': None, 'isShowPingTrace': None, 'components': None, 'waveEffectName': None, 'maxTargets': None},
+        
+         'fighter': <Dummy>: {'compName': None, 'components': None, 'planes': None},
+         
+          'phaserLasers': <Dummy>: {'maxDist': None, 'minDistV': None, 'compName': None, 'targetWeightMinDist': None, 'targetWeightMinHealth': None, 'taperDist': None, 'targetWeightMaxDist': None, 'ammoPool': None, 'normalDistribution': None, 'targetWeightHealth': None, 'targetWeightIncoming': None, 'targetWeightMaxHealth': None, 'targetWeightOutcoming': None, 'components': None, 'targetWeightMyAttacker': None, 'sigmaCount': None, 'minDistH': None, 'targetWeightDist': None, 'targetWeightAllyAttacker': None, 'artificialOffset': None, 'targetWeightYaw': None}, 'level': 10, 
+          
+          'chargeLasers': <Dummy>: {'maxDist': None, 'minDistV': None, 'compName': None, 'targetWeightMinDist': None, 'targetWeightMinHealth': None, 'taperDist': None, 'targetWeightMaxDist': None, 'ammoPool': None, 'normalDistribution': None, 'targetWeightHealth': None, 'targetWeightIncoming': None, 'targetWeightMaxHealth': None, 'targetWeightOutcoming': None, 'components': None, 'targetWeightMyAttacker': None, 'sigmaCount': None, 'minDistH': None, 'targetWeightDist': None, 'targetWeightAllyAttacker': None, 'artificialOffset': None, 'targetWeightYaw': None}, 'currentSkin': 3921080144L, 
+          
+          'specials': <Dummy>: {'buffsShiftMaxLevel': None, 'buffsShiftSpeed': None, 'buffsStartPool': None, 'compName': None, 'components': None}, 
+          
+          'fireControl': <Dummy>: {'sigmaCountCoef': None, 'compName': None, 'maxDistCoef': None, 'components': None}, 
+          
+          'directors': <Dummy>: {'compName': None, 'components': None}, 
+          
+          'photonTorpedoes': <Dummy>: {'compName': None, 'components': None, 'loaders': None, 'useGroups': None, 'useOneShot': None, 'treatAsPulsePhaserForUI': None, 'groups': None}, 
+          
+          'axisLaser': <Dummy>: {'maxDist': None, 'minDistV': None, 'compName': None, 'targetWeightMinDist': None, 'targetWeightMinHealth': None, 'taperDist': None, 'targetWeightMaxDist': None, 'ammoPool': None, 'normalDistribution': None, 'targetWeightHealth': None, 'targetWeightIncoming': None, 'targetWeightMaxHealth': None, 'targetWeightOutcoming': None, 'components': None, 'targetWeightMyAttacker': None, 'sigmaCount': None, 'minDistH': None, 'targetWeightDist': None, 'targetWeightAllyAttacker': None, 'artificialOffset': None, 'targetWeightYaw': None}, 
+          
+          'auxiliaryPlane': <Dummy>: {'compName': None, 'components': None, 'planes': None}, 
+          
+          'finders': <Dummy>: {'compName': None, 'components': None}, 
+          
+          'depthCharges': <Dummy>: {'compName': None, 'reloadTime': None, 'shotDelay': None, 'numShots': None, 'gunsSequenceType': None, 'centerZoneWidthPart': None, 'useShotNodesForSequence': None, 'components': None, 'shotsInPack': None, 'maxPacks': None}}, 'skinId': 3921080144L, 'friendlyFireEnabled': False, 'isClientLoaded': False, 'invitationsEnabled': True, 'isTShooter': False, 'keyTargetMarkers': 0, 'isOwn': True}

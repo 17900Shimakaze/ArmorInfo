@@ -1,0 +1,116 @@
+(def constant DEF_COLOR {
+	ALLY: 0x3CB371,
+	ENEMY: 0xDA70D6,
+	SELF: 0xFFD700,
+	DEF: 0xE9967A
+})
+(def element CLTElementUb2() layout=true
+    (scope
+        (var modDataEntityWatcher:gfx = "$datahub.getPrimWatcher(CC.mods_DataComponent, 'ArmorInfoModEntityKey')")
+        (var modDataEntity:gfx = "modDataEntityWatcher.entity" (event "modDataEntityWatcher.event"))
+        (var modDataComponent:gfx = "modDataEntity ? modDataEntity.mods_DataComponent : null" )
+        (var modData:dict = "modDataComponent ? modDataComponent.data : {}" (event "modDataComponent.evDataChanged"))
+        (var _shipType:str = "modData ? modData.shipType : 'null'")
+        (var _shipIDS:str = "modData ? modData.shipIDS : 'null'")
+
+        (var _citadel:str = "modData ? modData.citadel : 'null'")
+        (var _bow_st:str = "modData ? modData.bow_st : 'null'")
+        (var _bow_st_s:str = "modData ? (modData.bow_st_s == 'N/A' ? '' : modData.bow_st_s) : 'null'")
+        (var _cas:str = "modData ? modData.cas : 'null'")
+        (var _cas_deck:str = "modData ? modData.cas_deck : 'null'")
+        (var _outer:str = "modData ? modData.outer : 'null'")
+        (var _dd_cas:str = "modData ? modData.dd_cas : 'null'")
+        (var _csa_t:str = "modData ? (modData.cas_t != 'N/A' ? 'true' : 'false' ) : 'null'")
+
+    )
+    (block
+
+        (style
+			(position = "absolute")
+			(left = 400)
+			(top = 870)
+
+		)
+        (tf
+            (bind visible "_shipIDS != 'null'")
+            (style
+                (fontSize = 20)
+                (bind textColor "0xFFFFFF")
+            )
+            (bind text "tr(_shipIDS)")
+        )
+        #主装
+        (tf
+            (bind visible "_citadel != 'N/A'")
+            (style
+                (fontSize = 18)
+                (bind textColor "DEF_COLOR.DEF")
+            )
+            (bind text "tr('IDS_ARMOUR_TYPE_CITADEL') + ': ' + _citadel")
+        )
+        #上装
+        (tf
+            (bind visible "_cas != 'N/A'")
+            (style
+                (fontSize = 18)
+                (bind textColor "DEF_COLOR.DEF")
+            )
+            (bind text "tr('IDS_ARMOUR_TYPE_CAS') + ': ' + _cas")
+        )
+        #甲板
+        (tf
+            (bind visible "_cas_deck != 'N/A'")
+            (style
+                (fontSize = 18)
+                (bind textColor "DEF_COLOR.DEF")
+            )
+            (bind text "tr('IDS_ARMOR_CAS_DECK') + ': ' + _cas_deck")
+        )
+        #头尾
+        (tf
+            (bind visible "_bow_st != 'N/A' && (_shipType == 'Destroyer' ? (_dd_cas != 'N/A' ? true : false) : true)")
+            (style
+                (fontSize = 18)
+                (bind textColor "DEF_COLOR.DEF")
+            )
+            (bind text "tr('IDS_ARMOUR_TYPE_BOW_ST') + ': ' + _bow_st")
+        )
+        #下巴
+        (tf
+            (bind visible "_bow_st_s != ''")
+            (style
+                (fontSize = 18)
+                (bind textColor "DEF_COLOR.DEF")
+            )
+            (bind text "tr('IDS_BOW_BELT') + ': ' + _bow_st_s")
+        )
+        #鱼雷防护
+        (tf
+            (bind visible "_outer != 'N/A'")
+            (style
+                (fontSize = 18)
+                (bind textColor "DEF_COLOR.DEF")
+            )
+            (bind text "tr('IDS_ARMOUR_TYPE_OUTER') + ': ' + _outer")
+        )
+        #中段
+        (tf
+            (bind visible "_dd_cas != 'N/A'")
+            (style
+                (fontSize = 18)
+                (bind textColor "DEF_COLOR.DEF")
+            )
+            (bind text "tr('IDS_DD_CAS_BELT') + ': ' + _dd_cas")
+        )
+        #船壳
+        (tf
+            (bind visible "(_shipType == 'Destroyer' || _shipType == 'Submarine') && (_bow_st != 'N/A' && _dd_cas == 'N/A')")
+            (style
+                (fontSize = 18)
+                (bind textColor "DEF_COLOR.DEF")
+            )
+            (bind text "tr('IDS_ARMOUR_TYPE_BOW_ST') + ': ' + _bow_st")
+        )
+
+    )
+)

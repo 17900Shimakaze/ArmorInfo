@@ -1,0 +1,3 @@
+
+[ShipInfo]
+<ModsShell.API_v_1_0.m9d349290.Ship object at 0x000001E383FF8780>
