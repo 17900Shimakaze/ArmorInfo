@@ -1,6 +1,6 @@
 API_VERSION = 'API_v1.0'  # This is Mandatory!
 MOD_NAME = 'ArmorInfo'  # Your Mod Name
-from DataEnum import TestEnum
+from DataEnum import EnumX, EnumIX, EnumVIII
 
 try:
     import battle, events, dataHub, ui, constants, utils, callbacks
@@ -10,12 +10,16 @@ except:
 
 class ArmorInfo(object):
     def __init__(self):
-        self._testEnum = TestEnum
+        # self._testEnum = TestEnum
+        self._enumX = EnumX
+        self._enumIX = EnumIX
+        self._enumVIII = EnumVIII
         self._cacheSet = {}
         self._defSet = {'citadel': 'N/A', 'bow_st': 'N/A', 'cas': 'N/A', 'cas_deck': 'N/A',
                         'outer': 'N/A', 'dd_cas': 'N/A', 'cas_t': 'N/A', 'bow_st_s': 'N/A'}
         self._cacheIDS = None
         events.onBattleShown(self.onBattleStart)
+        events.onBattleQuit(self.onQuit)
         self._vary = None
         self._targetPlayerName = None
         self._isObserver = False
@@ -52,11 +56,12 @@ class ArmorInfo(object):
             self._targetPlayerName = pName
             targetShipIDS = targetPlayerInfo.shipInfo.shortName if pName else None
             shipType = targetPlayerInfo.shipInfo.subtype if pName else None
+            shipLv = targetPlayerInfo.shipInfo.level if pName else None
 
             if targetShipIDS == self._cacheIDS:
                 armorInfo = self._cacheSet.copy()
             else:
-                getInfo = getattr(self._testEnum, targetShipIDS, self._defSet)
+                getInfo = getattr(self.getEnumByLevel(shipLv), targetShipIDS, self._defSet)
                 processed_dict = {}
                 for key, value in getInfo.items():
                     processed_dict[key] = str(value) if value and value != '0' else 'N/A'
@@ -77,5 +82,14 @@ class ArmorInfo(object):
                 bow_st_s=armorInfo['bow_st_s'],
             ))
 
+    def getEnumByLevel(self, lv):
+        if lv == 10:
+            return self._enumX
+        elif lv == 9:
+            return self._enumIX
+        elif lv == 8:
+            return self._enumVIII
+        else:
+            return self._defSet
 
 ArmorInfoMod = ArmorInfo()
