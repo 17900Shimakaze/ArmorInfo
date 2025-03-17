@@ -4,7 +4,7 @@
 	SELF: 0xFFD700,
 	DEF: 0xE9967A
 })
-(def element CLTElementUb2() layout=true
+(def element ArmorInfoModElement() layout=true
     (scope
         (var modDataEntityWatcher:gfx = "$datahub.getPrimWatcher(CC.mods_DataComponent, 'ArmorInfoModEntityKey')")
         (var modDataEntity:gfx = "modDataEntityWatcher.entity" (event "modDataEntityWatcher.event"))
