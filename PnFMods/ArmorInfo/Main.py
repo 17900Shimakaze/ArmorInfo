@@ -1,6 +1,6 @@
 API_VERSION = 'API_v1.0'  # This is Mandatory!
 MOD_NAME = 'ArmorInfo'  # Your Mod Name
-from DataEnum import EnumX, EnumIX, EnumVIII
+from DataEnum import EnumX, EnumIX, EnumVIII, EnumEX
 
 try:
     import battle, events, dataHub, ui, constants, utils, callbacks
@@ -14,6 +14,7 @@ class ArmorInfo(object):
         self._enumX = EnumX
         self._enumIX = EnumIX
         self._enumVIII = EnumVIII
+        self._enumEX = EnumEX
         self._cacheSet = {}
         self._defSet = {'citadel': 'N/A', 'bow_st': 'N/A', 'cas': 'N/A', 'cas_deck': 'N/A',
                         'outer': 'N/A', 'dd_cas': 'N/A', 'cas_t': 'N/A', 'bow_st_s': 'N/A'}
@@ -61,7 +62,7 @@ class ArmorInfo(object):
             if targetShipIDS == self._cacheIDS:
                 armorInfo = self._cacheSet.copy()
             else:
-                getInfo = getattr(self.getEnumByLevel(shipLv), targetShipIDS, self._defSet)
+                getInfo = getattr(self.getEnumByLevel(shipLv, shipType), targetShipIDS, self._defSet)
                 processed_dict = {}
                 for key, value in getInfo.items():
                     processed_dict[key] = str(value) if value and value != '0' else 'N/A'
@@ -82,8 +83,10 @@ class ArmorInfo(object):
                 bow_st_s=armorInfo['bow_st_s'],
             ))
 
-    def getEnumByLevel(self, lv):
-        if lv == 10:
+    def getEnumByLevel(self, lv, shipType):
+        if lv == 11 or shipType == 'AirCarrier':
+            return self._enumEX
+        elif lv == 10:
             return self._enumX
         elif lv == 9:
             return self._enumIX
