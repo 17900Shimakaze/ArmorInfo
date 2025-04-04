@@ -20,7 +20,7 @@
         (var _cas_deck:str = "modData ? modData.cas_deck : 'null'")
         (var _outer:str = "modData ? modData.outer : 'null'")
         (var _dd_cas:str = "modData ? modData.dd_cas : 'null'")
-        (var _csa_t:str = "modData ? (modData.cas_t != 'N/A' ? 'true' : 'false' ) : 'null'")
+        (var _csa_t:str = "modData ? modData.cas_t : 'null'")
 
     )
     (block
@@ -57,14 +57,30 @@
             )
             (bind text "tr('IDS_ARMOUR_TYPE_CAS') + ': ' + _cas")
         )
+        (tf
+            (bind visible "_cas != 'N/A' && _shipType == 'AirCarrier'")
+            (style
+                (fontSize = 18)
+                (bind textColor "DEF_COLOR.DEF")
+            )
+            (bind text "tr('IDS_AC_SSC_HANG') + ': ' + _cas_t")
+        )
         #甲板
         (tf
-            (bind visible "_cas_deck != 'N/A'")
+            (bind visible "_cas_deck != 'N/A' && _shipType != 'AirCarrier'")
             (style
                 (fontSize = 18)
                 (bind textColor "DEF_COLOR.DEF")
             )
             (bind text "tr('IDS_ARMOR_CAS_DECK') + ': ' + _cas_deck")
+        )
+        (tf
+            (bind visible "_cas_deck != 'N/A' && _shipType == 'AirCarrier'")
+            (style
+                (fontSize = 18)
+                (bind textColor "DEF_COLOR.DEF")
+            )
+            (bind text "tr('IDS_AC_SSC_FDCK') + ': ' + _cas_deck")
         )
         #头尾
         (tf
