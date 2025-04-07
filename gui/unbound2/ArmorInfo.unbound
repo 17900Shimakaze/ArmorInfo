@@ -20,7 +20,7 @@
         (var _cas_deck:str = "modData ? modData.cas_deck : 'null'")
         (var _outer:str = "modData ? modData.outer : 'null'")
         (var _dd_cas:str = "modData ? modData.dd_cas : 'null'")
-        (var _csa_t:str = "modData ? modData.cas_t : 'null'")
+        (var _cas_t:str = "modData ? modData.cas_t : 'null'")
 
     )
     (block
