@@ -18,8 +18,7 @@ class ArmorInfo(object):
         self._enumEX = EnumEX
         self._cacheSet = {}
         self._defSet = {'citadel': 'N/A', 'bow_st': 'N/A', 'cas': 'N/A', 'cas_deck': 'N/A',
-                        'outer': 'N/A', 'dd_cas': 'N/A', 'cas_t': 'N/A', 'bow_st_s': 'N/A',
-                        'bow_st_n': 'N/A'}
+                        'outer': 'N/A', 'dd_cas': 'N/A', 'cas_t': 'N/A', 'bow_st_s': 'N/A'}
         self._cacheIDS = None
         events.onBattleShown(self.onBattleStart)
         events.onBattleQuit(self.onQuit)
@@ -83,7 +82,6 @@ class ArmorInfo(object):
                 dd_cas=armorInfo["dd_cas"],
                 cas_t=armorInfo["cas_t"],
                 bow_st_s=armorInfo['bow_st_s'],
-                bow_st_n=armorInfo['bow_st_n'],
             ))
 
     def getEnumByLevel(self, lv, shipType):
