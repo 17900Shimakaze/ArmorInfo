@@ -1,6 +1,6 @@
 API_VERSION = 'API_v1.0'  # This is Mandatory!
 MOD_NAME = 'ArmorInfo'  # Your Mod Name
-from DataEnum import EnumX, EnumIX, EnumVIII, EnumEX
+from DataEnum import EnumX, EnumIX, EnumVIII, EnumEX, EnumVII
 
 try:
     import battle, events, dataHub, ui, constants, utils, callbacks
@@ -14,10 +14,12 @@ class ArmorInfo(object):
         self._enumX = EnumX
         self._enumIX = EnumIX
         self._enumVIII = EnumVIII
+        self._enumVII = EnumVII
         self._enumEX = EnumEX
         self._cacheSet = {}
         self._defSet = {'citadel': 'N/A', 'bow_st': 'N/A', 'cas': 'N/A', 'cas_deck': 'N/A',
-                        'outer': 'N/A', 'dd_cas': 'N/A', 'cas_t': 'N/A', 'bow_st_s': 'N/A'}
+                        'outer': 'N/A', 'dd_cas': 'N/A', 'cas_t': 'N/A', 'bow_st_s': 'N/A',
+                        'bow_st_n': 'N/A'}
         self._cacheIDS = None
         events.onBattleShown(self.onBattleStart)
         events.onBattleQuit(self.onQuit)
@@ -81,6 +83,7 @@ class ArmorInfo(object):
                 dd_cas=armorInfo["dd_cas"],
                 cas_t=armorInfo["cas_t"],
                 bow_st_s=armorInfo['bow_st_s'],
+                bow_st_n=armorInfo['bow_st_n'],
             ))
 
     def getEnumByLevel(self, lv, shipType):
@@ -92,6 +95,8 @@ class ArmorInfo(object):
             return self._enumIX
         elif lv == 8:
             return self._enumVIII
+        elif lv == 7:
+            return self._enumVII
         else:
             return self._defSet
 
