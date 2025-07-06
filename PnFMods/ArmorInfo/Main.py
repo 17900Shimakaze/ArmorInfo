@@ -1,6 +1,6 @@
 API_VERSION = 'API_v1.0'  # This is Mandatory!
 MOD_NAME = 'ArmorInfo'  # Your Mod Name
-from DataEnum import EnumX, EnumIX, EnumVIII, EnumEX, EnumVII
+from DataEnum import EnumX, EnumIX, EnumVIII, EnumEX, EnumVII, EnumVI, EnumV
 
 try:
     import battle, events, dataHub, ui, constants, utils, callbacks
@@ -15,6 +15,8 @@ class ArmorInfo(object):
         self._enumIX = EnumIX
         self._enumVIII = EnumVIII
         self._enumVII = EnumVII
+        self._enumVI = EnumVI
+        self._enumV = EnumV
         self._enumEX = EnumEX
         self._cacheSet = {}
         self._defSet = {'citadel': 'N/A', 'bow_st': 'N/A', 'cas': 'N/A', 'cas_deck': 'N/A',
@@ -95,6 +97,10 @@ class ArmorInfo(object):
             return self._enumVIII
         elif lv == 7:
             return self._enumVII
+        elif lv == 6:
+            return self._enumVI
+        elif lv == 5:
+            return self._enumV
         else:
             return self._defSet
 

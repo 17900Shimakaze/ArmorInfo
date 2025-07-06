@@ -31,6 +31,7 @@ class EnumX:
     PBSB510 = dict(name='Thunderer', citadel='406-279', bow_st='32', cas='32', cas_deck='32', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PBSB610 = dict(name='Incomparable', citadel='279', bow_st='25', cas='102-152', cas_deck='51', outer='32', dd_cas='0', cas_t='0', bow_st_s='25-127')
     #           ——————————————————  Commonwealth ——————————————————
+    PUSB710 = dict(name='Irresistble', citadel='381-261', bow_st='32', cas='32', cas_deck='32', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     France    ——————————————————
     PFSB110 = dict(name='Republique', citadel='400-350', bow_st='32', cas='32', cas_deck='32', outer='32', dd_cas='0', cas_t='0', bow_st_s='0')
     PFSB510 = dict(name='Bourgogne', citadel='350-275', bow_st='32', cas='32', cas_deck='32', outer='32', dd_cas='0', cas_t='0', bow_st_s='0')
@@ -40,6 +41,7 @@ class EnumX:
     PISB710 = dict(name='Sicilia', citadel='375', bow_st='32', cas='70-150', cas_deck='50', outer='0', dd_cas='0', cas_t='0', bow_st_s='60')
     #           ——————————————————     Spain     ——————————————————
     #           ——————————————————  Netherlands  ——————————————————
+    PHSB710 = dict(name='Willem', citadel='356-305', bow_st='32', cas='32', cas_deck='32', outer='32', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     Europe    ——————————————————
     #           ——————————————————  Pan-America  ——————————————————
     PVSB010 = dict(name='Libertad', citadel='406', bow_st='32', cas='51', cas_deck='51', outer='51', dd_cas='0', cas_t='0', bow_st_s='0')
@@ -182,7 +184,7 @@ class EnumIX:
     PJSB519 = dict(name='Hizen', citadel='356', bow_st='32', cas='32', cas_deck='32', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PJSB529 = dict(name='Iwami', citadel='356', bow_st='32', cas='32', cas_deck='50', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PJSB539 = dict(name='Daisen', citadel='305-127', bow_st='32', cas='32', cas_deck='32', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
-    PJSB549 = dict(name='Tsurugi', citadel='0', bow_st='0', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
+    PJSB549 = dict(name='Tsurugi', citadel='305', bow_st='25', cas='32', cas_deck='32', outer='0', dd_cas='0', cas_t='0', bow_st_s='25-254')
     PJSB559 = dict(name='Iwami B', citadel='356', bow_st='32', cas='32', cas_deck='50', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     #           ——————————————————    U.S.S.R    ——————————————————
     PRSB109 = dict(name='Sovetsky Soyuz', citadel='420-375', bow_st='32', cas='60', cas_deck='60', outer='0', dd_cas='0', cas_t='0', bow_st_s='32-220-420')
@@ -233,6 +235,7 @@ class EnumIX:
     PASC510 = dict(name='Alaska', citadel='178', bow_st='27', cas='28', cas_deck='36', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PASC519 = dict(name='Tulsa', citadel='152', bow_st='27', cas='27', cas_deck='27', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PASC599 = dict(name='Alaska B', citadel='178', bow_st='27', cas='28', cas_deck='36', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
+    PASC719 = dict(name='Cambirdge', citadel='76-152', bow_st='27', cas='27', cas_deck='27', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     Japan     ——————————————————
     PJSC012 = dict(name='Ibuki', citadel='140-100', bow_st='25', cas='30-27', cas_deck='32-27', outer='27', dd_cas='0', cas_t='0', bow_st_s='0')
     PJSC209 = dict(name='Takahashi', citadel='105', bow_st='25', cas='25', cas_deck='27', outer='25', dd_cas='0', cas_t='0', bow_st_s='0')
@@ -286,7 +289,7 @@ class EnumIX:
     PZSC109 = dict(name='Sejong', citadel='95', bow_st='16', cas='32', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PZSC509 = dict(name='Dalian', citadel='100', bow_st='16', cas='16', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PZSC529 = dict(name='Mengchong', citadel='190', bow_st='27', cas='90', cas_deck='30', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
-    PZSC719 = dict(name='Tianjin', citadel='0', bow_st='0', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
+    PZSC719 = dict(name='Tianjin', citadel='140', bow_st='25', cas='35', cas_deck='30', outer='0', dd_cas='0', cas_t='0', bow_st_s='40', bow_st_n='25-130')
 
     #       ——————————————————    DD    ——————————————————
 
@@ -297,6 +300,7 @@ class EnumIX:
     PASD529 = dict(name='Black B', citadel='0', bow_st='19', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PASD709 = dict(name='Black', citadel='0', bow_st='19', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PASD719 = dict(name='JohnSton', citadel='0', bow_st='19', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
+    PASD819 = dict(name='FBO JohnSton', citadel='0', bow_st='19', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     #           ——————————————————     Japan     ——————————————————
     PJSD209 = dict(name='Yugumo', citadel='0', bow_st='19', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PJSD219 = dict(name='Kitakaze', citadel='0', bow_st='19', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
@@ -334,7 +338,7 @@ class EnumIX:
     #           ——————————————————  Pan-America  ——————————————————
     #           ——————————————————    Pan-Asia   ——————————————————
     PZSD109 = dict(name='Chung Mu', citadel='0', bow_st='19', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
-
+    PZSD719 = dict(name='Nan Ning', citadel='0', bow_st='19', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
 
 class EnumVIII:
 
@@ -385,7 +389,7 @@ class EnumVIII:
     PFSB508 = dict(name='Gascogne', citadel='320-250', bow_st='32', cas='32', cas_deck='32', outer='32', dd_cas='0', cas_t='0', bow_st_s='0')
     PFSB528 = dict(name='Champagne', citadel='240', bow_st='25', cas='32', cas_deck='32', outer='32', dd_cas='0', cas_t='0', bow_st_s='0')
     PFSB538 = dict(name='Flandre', citadel='350-275', bow_st='32', cas='32', cas_deck='32', outer='50', dd_cas='0', cas_t='0', bow_st_s='0')
-    PFSB548 = dict(name='Picardie', citadel='0', bow_st='0', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
+    PFSB548 = dict(name='Picardie', citadel='300-190', bow_st='32', cas='180', cas_deck='32', outer='32', dd_cas='0', cas_t='0', bow_st_s='180', bow_st_n='32-200')
     #           ——————————————————     Italy     ——————————————————
     PISB108 = dict(name='Vittorio Veneto', citadel='375', bow_st='32', cas='70', cas_deck='45', outer='0', dd_cas='0', cas_t='0', bow_st_s='32-130')
     PISB508 = dict(name='Roma', citadel='375', bow_st='32', cas='70', cas_deck='45', outer='0', dd_cas='0', cas_t='0', bow_st_s='32-130')
@@ -432,7 +436,7 @@ class EnumVIII:
     PGSC528 = dict(name='Schill', citadel='120', bow_st='27', cas='27', cas_deck='30', outer='0', dd_cas='0', cas_t='0', bow_st_s='30')
     PGSC598 = dict(name='Mainz B', citadel='80', bow_st='25', cas='25', cas_deck='27', outer='25', dd_cas='0', cas_t='0', bow_st_s='40')
     PGSC718 = dict(name='Cross of Dorn', citadel='80', bow_st='25', cas='25', cas_deck='27', outer='25', dd_cas='0', cas_t='0', bow_st_s='40')
-    PGSC728 = dict(name='Wiesbaden', citadel='0', bow_st='0', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
+    PGSC728 = dict(name='Wiesbaden', citadel='80', bow_st='16', cas='25', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='16-40')
     #           ——————————————————      U.K.     ——————————————————
     PBSC108 = dict(name='Edinburgh', citadel='114', bow_st='16', cas='19-114', cas_deck='19-51', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PBSC208 = dict(name='Albemarle', citadel='152', bow_st='25', cas='27', cas_deck='30', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
@@ -548,7 +552,7 @@ class EnumVII:
     PBSB527 = dict(name='DOY', citadel='381-235', bow_st='26', cas='26', cas_deck='26', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     PBSB537 = dict(name='Collingwood', citadel='318-305', bow_st='26', cas='26', cas_deck='26', outer='26', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     PBSB537 = dict(name='Renown 44', citadel='299-51', bow_st='26', cas='38', cas_deck='29', outer='26', dd_cas='0', cas_t='0', bow_st_s='26-102', bow_st_n='26-76')
-    PBSB717 = dict(name='Rodney', citadel='0', bow_st='0', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PBSB717 = dict(name='Rodney', citadel='356-330', bow_st='26', cas='32', cas_deck='32', outer='32', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————  Commonwealth ——————————————————
     PUSB507 = dict(name='Yukon', citadel='381-235', bow_st='26', cas='26', cas_deck='26', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     France    ——————————————————
@@ -662,19 +666,40 @@ class EnumVII:
     #           ——————————————————  Pan-America  ——————————————————
     #           ——————————————————    Pan-Asia   ——————————————————
     PZSD107 = dict(name='Gadjah Mada', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')   
-    # —————————————————— Tier 8 ——————————————————
+    
+class EnumVI:    
+    # —————————————————— Tier 6 ——————————————————
 
     #       ——————————————————    BB    ——————————————————
 
     #           ——————————————————     U.S.A.    ——————————————————
-
+    PASB034 = dict(name='New Mexico', citadel='343-203', bow_st='26', cas='26', cas_deck='26', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='26-203')
+    PASB506 = dict(name='Arizona', citadel='343-203', bow_st='26', cas='26-37', cas_deck='26', outer='26', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='26-203')
+    PASB507 = dict(name='W.Virginia', citadel='343-203', bow_st='26', cas='26', cas_deck='26', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='26-203')
     #           ——————————————————     Japan     ——————————————————
+    PJSB006 = dict(name='Fuso', citadel='305-102', bow_st='26', cas='152', cas_deck='35', outer='26', dd_cas='0', cas_t='0', bow_st_s='102', bow_st_n='26-102')
+    PJSB506 = dict(name='Mutsu', citadel='305', bow_st='26', cas='26-229', cas_deck='26-70', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PJSB526 = dict(name='Ise', citadel='299-200', bow_st='26', cas='26-149', cas_deck='35-44-26', outer='32', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————    U.S.S.R    ——————————————————
+    PRSB106 = dict(name='Izmail', citadel='300', bow_st='26', cas='100', cas_deck='36-26', outer='0', dd_cas='0', cas_t='0', bow_st_s='113-181', bow_st_n='26-181')
+    PRSB516 = dict(name='Novorossiysk', citadel='250-210', bow_st='16', cas='26-130', cas_deck='26-43', outer='0', dd_cas='0', cas_t='0', bow_st_s='16-130', bow_st_n='85-130')
     #           ——————————————————    Germany    ——————————————————
+    PGSB106 = dict(name='Bayern', citadel='350-260', bow_st='26', cas='170-250', cas_deck='40-30', outer='0', dd_cas='0', cas_t='0', bow_st_s='30-200', bow_st_n='26-200')
+    PGSB206 = dict(name='Mackensen', citadel='300-225', bow_st='25', cas='150', cas_deck='26-50', outer='0', dd_cas='0', cas_t='0', bow_st_s='30-120', bow_st_n='25-100')
+    PGSB506 = dict(name='Friedrich', citadel='300-225', bow_st='26', cas='150-26', cas_deck='50-26', outer='0', dd_cas='0', cas_t='0', bow_st_s='26-120', bow_st_n='26-100')
     #           ——————————————————      U.K.     ——————————————————
+    PBSB002 = dict(name='Warspite', citadel='330', bow_st='26', cas='26-152', cas_deck='26-38', outer='26', dd_cas='0', cas_t='0', bow_st_s='26-152', bow_st_n='26-152')
+    PBSB106 = dict(name='Elizabeth', citadel='330-267', bow_st='26', cas='26-152', cas_deck='26-38', outer='26', dd_cas='0', cas_t='0', bow_st_s='26-152', bow_st_n='26-152')
+    PBSB206 = dict(name='Renown', citadel='229-51', bow_st='16', cas='38', cas_deck='29', outer='26', dd_cas='0', cas_t='0', bow_st_s='16-102', bow_st_n='16-76')
+    PBSB526 = dict(name='Repulse', citadel='229', bow_st='16', cas='38', cas_deck='26', outer='26', dd_cas='0', cas_t='0', bow_st_s='26-102', bow_st_n='26-76')
+    PBSB536 = dict(name='Repulse B', citadel='229', bow_st='16', cas='38', cas_deck='26', outer='26', dd_cas='0', cas_t='0', bow_st_s='26-102', bow_st_n='26-76')
     #           ——————————————————  Commonwealth ——————————————————
     #           ——————————————————     France    ——————————————————
+    PFSB106 = dict(name='Normandie', citadel='280-190', bow_st='0', cas='26-180', cas_deck='30-26', outer='26', dd_cas='0', cas_t='0', bow_st_s='180', bow_st_n='26-200')
+    PFSB506 = dict(name='Dunkerque', citadel='225-175', bow_st='26', cas='26', cas_deck='26', outer='26', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PFSB596 = dict(name='Dunkerque B', citadel='225-175', bow_st='26', cas='26', cas_deck='26', outer='26', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     Italy     ——————————————————
+    PISB106 = dict(name='Andrea Doria', citadel='250-195', bow_st='26', cas='120-70', cas_deck='44-38', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='90-130')
     #           ——————————————————     Spain     ——————————————————
     #           ——————————————————  Netherlands  ——————————————————
     #           ——————————————————     Europe    ——————————————————
@@ -684,92 +709,207 @@ class EnumVII:
     #       ——————————————————    Cruiser    ——————————————————
 
     #           ——————————————————     U.S.A.    ——————————————————
+    PASC106 = dict(name='Pensacola', citadel='102-76', bow_st='25', cas='25', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PASC206 = dict(name='Dallas', citadel='89', bow_st='16', cas='16', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     Japan     ——————————————————
+    PJSC007 = dict(name='Aoba', citadel='76', bow_st='16', cas='25', cas_deck='48', outer='25', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PJSC206 = dict(name='Gokase', citadel='76', bow_st='16', cas='16', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————    U.S.S.R    ——————————————————
+    PRSC106 = dict(name='Budeny', citadel='115', bow_st='16', cas='19', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PRSC506 = dict(name='Molotov', citadel='70', bow_st='16', cas='18', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PRSC606 = dict(name='Admiral Makarov', citadel='50', bow_st='16', cas='20', cas_deck='25', outer='19', dd_cas='0', cas_t='0', bow_st_s='20', bow_st_n='16-35')
     #           ——————————————————    Germany    ——————————————————
+    PGSC106 = dict(name='Nurnberg', citadel='50', bow_st='16', cas='20', cas_deck='25', outer='19', dd_cas='0', cas_t='0', bow_st_s='20', bow_st_n='16-35')
+    PGSC506 = dict(name='Spee', citadel='100', bow_st='16', cas='25', cas_deck='25', outer='25', dd_cas='0', cas_t='0', bow_st_s='19', bow_st_n='16-50')
+    PGSC516 = dict(name='Leipzig', citadel='50-30', bow_st='16', cas='16', cas_deck='25', outer='16', dd_cas='0', cas_t='0', bow_st_s='20', bow_st_n='16-20')
+    PGSC576 = dict(name='HSF Spee', citadel='100', bow_st='16', cas='25', cas_deck='25', outer='25', dd_cas='0', cas_t='0', bow_st_s='19', bow_st_n='16-50')
+    # PGSC = dict(name='', citadel='0', bow_st='0', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————      U.K.     ——————————————————
+    PBSC106 = dict(name='Leander', citadel='100', bow_st='13', cas='16-100', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PBSC206 = dict(name='Devonshire', citadel='114', bow_st='16', cas='25', cas_deck='27', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PBSC516 = dict(name='London', citadel='114', bow_st='16', cas='25', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PBSC526 = dict(name='Dido', citadel='89', bow_st='13', cas='89-13', cas_deck='25-13', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='13-25-13')
+    PBSC716 = dict(name='Orion 44', citadel='100', bow_st='13', cas='16-100', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————  Commonwealth ——————————————————
+    PUSC016 = dict(name='Hobart', citadel='100', bow_st='16', cas='16-100', cas_deck='32-25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PUSC506 = dict(name='Perth', citadel='100', bow_st='16', cas='16-100', cas_deck='32-25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PUSC516 = dict(name='Mysore', citadel='114', bow_st='16', cas='19-114', cas_deck='19-51', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='38-16')
     #           ——————————————————     France    ——————————————————
+    PFSC106 = dict(name='La Galissonniere', citadel='105', bow_st='16', cas='16', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PFSC506 = dict(name='De Grasse', citadel='100', bow_st='16', cas='16', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PFSC516 = dict(name='Dupleix', citadel='0', bow_st='16', cas='25', cas_deck='25', outer='25', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PFSC716 = dict(name='Montcalm', citadel='105', bow_st='16', cas='16', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     Italy     ——————————————————
+    PISC106 = dict(name='Trento', citadel='70', bow_st='16', cas='25', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PISC506 = dict(name='DucadAosta', citadel='70', bow_st='16', cas='20', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     Spain     ——————————————————
+    PSSC106 = dict(name='Baleares', citadel='51', bow_st='16', cas='25', cas_deck='38', outer='25', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PSSC506 = dict(name='Canarias', citadel='51', bow_st='16', cas='25', cas_deck='38', outer='25', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————  Netherlands  ——————————————————
+    PHSC106 = dict(name='Kijkduin', citadel='50-75', bow_st='16', cas='16', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='16', bow_st_n='60-75')
     #           ——————————————————     Europe    ——————————————————
+    PWSC506 = dict(name='Elli', citadel='70', bow_st='16', cas='20', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————  Pan-America  ——————————————————
+    PVSC106 = dict(name='Cochrane', citadel='100', bow_st='16', cas='20', cas_deck='25', outer='30', dd_cas='0', cas_t='0', bow_st_s='30', bow_st_n='0')
     #           ——————————————————    Pan-Asia   ——————————————————
+    PZSC106 = dict(name='Rahmat', citadel='89', bow_st='13', cas='89-13', cas_deck='25-13', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='13-25-13')
+    PZSC506 = dict(name='Huang He', citadel='70', bow_st='16', cas='70-16', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='16-25-16')
 
     #       ——————————————————    DD    ——————————————————
 
     #           ——————————————————     U.S.A.    ——————————————————
+    PASD005 = dict(name='Farragut', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PASD506 = dict(name='Monaghan', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     Japan     ——————————————————
+    PJSD106 = dict(name='Fubuki', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PJSD206 = dict(name='Hatsuharu', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PJSD706 = dict(name='Shinonome', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PJSD596 = dict(name='Shinonome B', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————    U.S.S.R    ——————————————————
+    PRSD206 = dict(name='Gnevny', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————    Germany    ——————————————————
+    PGSD106 = dict(name='Ernst Gaede', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PGSD506 = dict(name='T-61', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PGSD516 = dict(name='Karl', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————      U.K.     ——————————————————
+    PBSD106 = dict(name='Icarus', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PBSD506 = dict(name='Gallant', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————  Commonwealth ——————————————————
     #           ——————————————————     France    ——————————————————
+    PFSD016 = dict(name='Duchaffault', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PFSD106 = dict(name='Guepard', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PFSD506 = dict(name='Aigle', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     Italy     ——————————————————
+    PISD106 = dict(name='Aviere', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PISD506 = dict(name='Leone', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     Spain     ——————————————————
     #           ——————————————————  Netherlands  ——————————————————
     #           ——————————————————     Europe    ——————————————————
+    PWSD106 = dict(name='Vasteras', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PWSD206 = dict(name='Stord', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————  Pan-America  ——————————————————
+    PVSD506 = dict(name='Jurua', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————    Pan-Asia   ——————————————————
+    PZSD106 = dict(name='Fu Shun', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PZSD506 = dict(name='An Shan', citadel='0', bow_st='16', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
 
-    # —————————————————— Tier 8 ——————————————————
+class EnumV:
+    # —————————————————— Tier 5 ——————————————————
 
     #       ——————————————————    BB    ——————————————————
 
     #           ——————————————————     U.S.A.    ——————————————————
-
+    PASB006 = dict(name='New York', citadel='305', bow_st='19', cas='19-165', cas_deck='19', outer='25', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='19-152')
+    PASB505 = dict(name='Oklahoma', citadel='343-273', bow_st='19', cas='25', cas_deck='19', outer='25', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='19-330')
+    PASB705 = dict(name='Texas', citadel='305', bow_st='19', cas='19-165', cas_deck='19', outer='25', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='19-152')
     #           ——————————————————     Japan     ——————————————————
+    PJSB007 = dict(name='Kongo', citadel='203', bow_st='19', cas='152-19', cas_deck='38-19', outer='19', dd_cas='0', cas_t='0', bow_st_s='76', bow_st_n='19-76')
+    PJSB705 = dict(name='ARP Kongo', citadel='203', bow_st='19', cas='152-19', cas_deck='38-19', outer='19', dd_cas='0', cas_t='0', bow_st_s='76', bow_st_n='19-76')
+    PJSB706 = dict(name='ARP Kirishima', citadel='203', bow_st='19', cas='152-19', cas_deck='38-19', outer='19', dd_cas='0', cas_t='0', bow_st_s='76', bow_st_n='19-76')
+    PJSB707 = dict(name='ARP Haruna', citadel='203', bow_st='19', cas='152-19', cas_deck='38-19', outer='19', dd_cas='0', cas_t='0', bow_st_s='76', bow_st_n='19-76')
+    PJSB708 = dict(name='ARP Hiei', citadel='203', bow_st='19', cas='152-19', cas_deck='38-19', outer='19', dd_cas='0', cas_t='0', bow_st_s='76', bow_st_n='19-76')
+    PJSB715 = dict(name='HSF Hiei', citadel='203', bow_st='19', cas='152-19', cas_deck='38-19', outer='19', dd_cas='0', cas_t='0', bow_st_s='76', bow_st_n='19-76')
     #           ——————————————————    U.S.S.R    ——————————————————
+    PRSB105 = dict(name='Pyotr', citadel='250-200', bow_st='19', cas='25-125', cas_deck='19-38', outer='0', dd_cas='0', cas_t='0', bow_st_s='75-180', bow_st_n='19-180')
+    PRSB505 = dict(name='Oktyabrskaya Revolutsiya', citadel='225', bow_st='19', cas='125', cas_deck='38', outer='0', dd_cas='0', cas_t='0', bow_st_s='125-225', bow_st_n='50-125')
     #           ——————————————————    Germany    ——————————————————
+    PGSB105 = dict(name='Koenig', citadel='350-265', bow_st='19', cas='170-200', cas_deck='30', outer='0', dd_cas='0', cas_t='0', bow_st_s='150-200', bow_st_n='19-150')
+    PGSB205 = dict(name='Derfflinger', citadel='300-225', bow_st='19', cas='19-265', cas_deck='25-35', outer='0', dd_cas='0', cas_t='0', bow_st_s='100-120', bow_st_n='19-100')
     #           ——————————————————      U.K.     ——————————————————
+    PBSB105 = dict(name='Iron Duke', citadel='305-254', bow_st='19', cas='152-203', cas_deck='25-44', outer='0', dd_cas='0', cas_t='0', bow_st_s='19-152', bow_st_n='19-152')
+    PBSB205 = dict(name='Tiger', citadel='127-229', bow_st='16', cas='102-152', cas_deck='38-25', outer='0', dd_cas='0', cas_t='0', bow_st_s='16-102', bow_st_n='16-102')
+    PBSB505 = dict(name='Agincourt', citadel='152-229', bow_st='19', cas='152', cas_deck='38', outer='0', dd_cas='0', cas_t='0', bow_st_s='102', bow_st_n='102')
     #           ——————————————————  Commonwealth ——————————————————
     #           ——————————————————     France    ——————————————————
+    PFSB105 = dict(name='Bretagne', citadel='250-175', bow_st='19', cas='160-19', cas_deck='48-19', outer='0', dd_cas='0', cas_t='0', bow_st_s='150-200', bow_st_n='19-200')
     #           ——————————————————     Italy     ——————————————————
+    PISB105 = dict(name='Conte di Cavour', citadel='250-210', bow_st='19', cas='130', cas_deck='30-43', outer='0', dd_cas='0', cas_t='0', bow_st_s='85-130', bow_st_n='85-130')
+    PISB505 = dict(name='Cesare', citadel='250-210', bow_st='19', cas='19-130', cas_deck='19-43', outer='0', dd_cas='0', cas_t='0', bow_st_s='19-130', bow_st_n='85-130')
     #           ——————————————————     Spain     ——————————————————
     #           ——————————————————  Netherlands  ——————————————————
     #           ——————————————————     Europe    ——————————————————
+    PWSB504 = dict(name='Viribus Unitis', citadel='280-225', bow_st='19', cas='180', cas_deck='30', outer='0', dd_cas='0', cas_t='0', bow_st_s='110-150', bow_st_n='19-150')
     #           ——————————————————  Pan-America  ——————————————————
+    PVSB505 = dict(name='Rio de Janeiro', citadel='152-229', bow_st='19', cas='152', cas_deck='38', outer='0', dd_cas='0', cas_t='0', bow_st_s='102', bow_st_n='102')
     #           ——————————————————    Pan-Asia   ——————————————————
 
     #       ——————————————————    Cruiser    ——————————————————
 
     #           ——————————————————     U.S.A.    ——————————————————
+    PASC005 = dict(name='Omaha', citadel='76', bow_st='13', cas='16', cas_deck='16-37', outer='0', dd_cas='0', cas_t='0', bow_st_s='13-25-13', bow_st_n='13-25-13')
+    PASC044 = dict(name='Marblehead', citadel='76', bow_st='13', cas='16', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='13-25-13', bow_st_n='13-25-13')
+    PASC045 = dict(name='Marblehead L', citadel='76', bow_st='13', cas='16', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='13-25-13', bow_st_n='13-25-13')
+    PASC505 = dict(name='Rattlehead', citadel='76', bow_st='13', cas='16', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='13-25-13', bow_st_n='13-25-13')
     #           ——————————————————     Japan     ——————————————————
+    PJSC005 = dict(name='Furutaka', citadel='76', bow_st='13', cas='25', cas_deck='48', outer='16', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PJSC205 = dict(name='Agano', citadel='60', bow_st='13', cas='16', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PJSC505 = dict(name='Yahagi', citadel='60', bow_st='13', cas='16', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————    U.S.S.R    ——————————————————
+    PRSC003 = dict(name='Murmansk', citadel='76', bow_st='13', cas='16', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='13-25-13', bow_st_n='13-25-13')
+    PRSC215 = dict(name='Kotovsky', citadel='35', bow_st='13', cas='16', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PRSC505 = dict(name='Krasni Krym', citadel='75', bow_st='13', cas='25', cas_deck='20-25', outer='0', dd_cas='0', cas_t='0', bow_st_s='13-75', bow_st_n='25-75')
+    PRSC515 = dict(name='Mikoyan', citadel='35', bow_st='13', cas='16', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PRSC525 = dict(name='Kirov', citadel='50', bow_st='13', cas='18', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————    Germany    ——————————————————
+    PGSC105 = dict(name='Konigsberg', citadel='50', bow_st='13', cas='16', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='20', bow_st_n='13-35')
     #           ——————————————————      U.K.     ——————————————————
+    PBSC105 = dict(name='Emerald', citadel='57-76', bow_st='13', cas='0', cas_deck='40', outer='0', dd_cas='0', cas_t='0', bow_st_s='38', bow_st_n='13-38')
+    PBSC205 = dict(name='Hawkins', citadel='64-76', bow_st='13', cas='51', cas_deck='16-38', outer='0', dd_cas='0', cas_t='0', bow_st_s='38', bow_st_n='57')
+    PBSC505 = dict(name='Exeter', citadel='76', bow_st='13', cas='19', cas_deck='19', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————  Commonwealth ——————————————————
+    PUSC105 = dict(name='Delhi', citadel='100', bow_st='13', cas='16-100', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     France    ——————————————————
+    PFSC105 = dict(name='Emile Bertin', citadel='16', bow_st='13', cas='16', cas_deck='16', outer='16', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     Italy     ——————————————————
+    PISC105 = dict(name='Raimondo', citadel='60', bow_st='13', cas='20', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PISC505 = dict(name='Genova', citadel='70', bow_st='13', cas='16', cas_deck='16-50', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     Spain     ——————————————————
+    PSSC105 = dict(name='Galicia', citadel='57-76', bow_st='13', cas='0', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='38', bow_st_n='13-57')
     #           ——————————————————  Netherlands  ——————————————————
+    PHSC105 = dict(name='Celebes', citadel='75', bow_st='13', cas='16', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     Europe    ——————————————————
     #           ——————————————————  Pan-America  ——————————————————
+    PVSC105 = dict(name='La Argentina', citadel='69', bow_st='13', cas='16', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='13-38-13')
     #           ——————————————————    Pan-Asia   ——————————————————
 
     #       ——————————————————    DD    ——————————————————
 
     #           ——————————————————     U.S.A.    ——————————————————
+    PASD014 = dict(name='Nicholas', citadel='0', bow_st='10', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PASD505 = dict(name='Hill', citadel='0', bow_st='10', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     Japan     ——————————————————
+    PJSD004 = dict(name='Minekaze', citadel='0', bow_st='10', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PJSD017 = dict(name='Kamikaze', citadel='0', bow_st='10', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PJSD025 = dict(name='True Kamikaze', citadel='0', bow_st='10', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PJSD026 = dict(name='Camo Kamikaze', citadel='0', bow_st='10', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PJSD105 = dict(name='Mutsuki', citadel='0', bow_st='10', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————    U.S.S.R    ——————————————————
+    PRSD001 = dict(name='Gremyashchy', citadel='0', bow_st='10', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PRSD505 = dict(name='Okhotnik', citadel='0', bow_st='10', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————    Germany    ——————————————————
+    PGSD105 = dict(name='T-22', citadel='0', bow_st='10', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————      U.K.     ——————————————————
+    PBSD105 = dict(name='Acasta', citadel='0', bow_st='10', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————  Commonwealth ——————————————————
     #           ——————————————————     France    ——————————————————
+    PFSD015 = dict(name='Le Hardi', citadel='0', bow_st='10', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PFSD105 = dict(name='Jaguar', citadel='0', bow_st='10', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PFSD504 = dict(name='Siroco', citadel='0', bow_st='10', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     Italy     ——————————————————
+    PISD105 = dict(name='Maestrale', citadel='0', bow_st='10', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     Spain     ——————————————————
     #           ——————————————————  Netherlands  ——————————————————
     #           ——————————————————     Europe    ——————————————————
+    PWSD105 = dict(name='Visby', citadel='0', bow_st='10', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————  Pan-America  ——————————————————
     #           ——————————————————    Pan-Asia   —————————————————— 
+    PZSD105 = dict(name='Jian Wei', citadel='0', bow_st='10', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #    
     # —————————————————— Tier 8 ——————————————————
 
     #       ——————————————————    BB    ——————————————————
 
     #           ——————————————————     U.S.A.    ——————————————————
-
     #           ——————————————————     Japan     ——————————————————
     #           ——————————————————    U.S.S.R    ——————————————————
     #           ——————————————————    Germany    ——————————————————
