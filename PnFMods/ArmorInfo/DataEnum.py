@@ -905,7 +905,7 @@ class EnumV:
     PBSC205 = dict(name='Hawkins', citadel='64-76', bow_st='13', cas='51', cas_deck='16-38', outer='0', dd_cas='0', cas_t='0', bow_st_s='38', bow_st_n='57')
     PBSC505 = dict(name='Exeter', citadel='76', bow_st='13', cas='19', cas_deck='19', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————  Commonwealth ——————————————————
-    PUSC105 = dict(name='Delhi', citadel='100', bow_st='13', cas='16-100', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PUSC015 = dict(name='Delhi', citadel='100', bow_st='13', cas='16-100', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     France    ——————————————————
     PFSC105 = dict(name='Emile Bertin', citadel='16', bow_st='13', cas='16', cas_deck='16', outer='16', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     Italy     ——————————————————
@@ -919,6 +919,7 @@ class EnumV:
     #           ——————————————————  Pan-America  ——————————————————
     PVSC105 = dict(name='La Argentina', citadel='69', bow_st='13', cas='16', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='13-38-13')
     #           ——————————————————    Pan-Asia   ——————————————————
+    PISC505 = dict(name='Chong Qing', citadel='70', bow_st='13', cas='70-13', cas_deck='25-13', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='13-15-13')
 
     #       ——————————————————    DD    ——————————————————
 
