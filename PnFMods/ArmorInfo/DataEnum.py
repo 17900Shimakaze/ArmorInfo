@@ -50,6 +50,7 @@ class EnumX:
     #           ——————————————————  Netherlands  ——————————————————
     PHSB710 = dict(name='Willem', citadel='356-305', bow_st='32', cas='32', cas_deck='32', outer='32', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     Europe    ——————————————————
+    PWSB010 = dict(name='Thor', citadel='350', bow_st='32', cas='70', cas_deck='40', outer='0', dd_cas='0', cas_t='0', bow_st_s='32-40', bow_st_n='32')
     #           ——————————————————  Pan-America  ——————————————————
     PVSB010 = dict(name='Libertad', citadel='406', bow_st='32', cas='51', cas_deck='51', outer='51', dd_cas='0', cas_t='0', bow_st_s='0')
     #           ——————————————————    Pan-Asia   ——————————————————
@@ -99,6 +100,7 @@ class EnumX:
     #           ——————————————————  Commonwealth ——————————————————
     PUSC010 = dict(name='Cerberus', citadel='152-203', bow_st='25', cas='32', cas_deck='30', outer='20', dd_cas='0', cas_t='0', bow_st_s='0')
     PUSC510 = dict(name='Brisbane', citadel='101', bow_st='16', cas='16', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
+    PUSC710 = dict(name='Pioneer', citadel='120', bow_st='25', cas='25-120', cas_deck='30-51', outer='25', dd_cas='0', cas_t='0', bow_st_s='0')
     PUSC810 = dict(name='Brisbane B', citadel='101', bow_st='16', cas='16', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     #           ——————————————————     France    ——————————————————
     PFSC110 = dict(name='Henri IV', citadel='140-105', bow_st='25', cas='30', cas_deck='30', outer='30', dd_cas='0', cas_t='0', bow_st_s='0')
@@ -212,6 +214,7 @@ class EnumIX:
     PRSB109 = dict(name='Sovetsky Soyuz', citadel='420-375', bow_st='32', cas='60', cas_deck='60', outer='0', dd_cas='0', cas_t='0', bow_st_s='32-220-420')
     PRSB509 = dict(name='Navarin', citadel='340', bow_st='32', cas='75', cas_deck='32-35', outer='0', dd_cas='0', cas_t='0', bow_st_s='113-181')
     PRSB709 = dict(name='AL Sov.Rossiya', citadel='420-375', bow_st='32', cas='60', cas_deck='60', outer='0', dd_cas='0', cas_t='0', bow_st_s='32-220-420')
+    PRSB719 = dict(name='Zarya Svobody', citadel='406-345', bow_st='32', cas='50', cas_deck='50-60', outer='0', dd_cas='0', cas_t='0', bow_st_s='32-254', bow_st_n='32-254')
     PRSB819 = dict(name='BA Zarya Svobody', citadel='406-345', bow_st='32', cas='50', cas_deck='50-60', outer='0', dd_cas='0', cas_t='0', bow_st_s='32-254', bow_st_n='32-254')
     #           ——————————————————    Germany    ——————————————————
     PGSB109 = dict(name='Friedrich D.G.', citadel='300', bow_st='32', cas='145-235', cas_deck='80-50', outer='0', dd_cas='0', cas_t='0', bow_st_s='60-150')
@@ -239,6 +242,7 @@ class EnumIX:
     PSSB719 = dict(name='Victoria', citadel='375', bow_st='32', cas='70', cas_deck='45', outer='0', dd_cas='0', cas_t='0', bow_st_s='32-130')
     #           ——————————————————  Netherlands  ——————————————————
     #           ——————————————————     Europe    ——————————————————
+    PWSB019 = dict(name='Gustav den Store', citadel='300', bow_st='32', cas='70', cas_deck='40', outer='0', dd_cas='0', cas_t='0', bow_st_s='32', bow_st_n='32')
     PWSB509 = dict(name='Karl XIV Johan', citadel='330-255', bow_st='32', cas='150-220', cas_deck='32', outer='0', dd_cas='0', cas_t='0', bow_st_s='35')
     PWSB719 = dict(name='Niord', citadel='330-235', bow_st='32', cas='150', cas_deck='32', outer='0', dd_cas='0', cas_t='0', bow_st_s='32', bow_st_n='32-100')
     PWSB909 = dict(name='Karl XIV Johan B', citadel='330-255', bow_st='32', cas='150-220', cas_deck='32', outer='0', dd_cas='0', cas_t='0', bow_st_s='35')
@@ -306,6 +310,7 @@ class EnumIX:
     PISC109 = dict(name='Brindisi', citadel='150', bow_st='25', cas='27-30', cas_deck='27-30', outer='0', dd_cas='0', cas_t='0', bow_st_s='50')
     PISC519 = dict(name='Michelangelo', citadel='200', bow_st='25', cas='40-100', cas_deck='40-50', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PISC719 = dict(name='F.Gonzaga', citadel='100', bow_st='16', cas='16', cas_deck='16', outer='30', dd_cas='0', cas_t='0', bow_st_s='30')
+    PISC729 = dict(name='F.Gonzaga', citadel='150', bow_st='25', cas='27-30', cas_deck='27', outer='0', dd_cas='0', cas_t='50', bow_st_s='50')
     #           ——————————————————     Spain     ——————————————————
     PSSC109 = dict(name='Andalucia', citadel='110', bow_st='25', cas='27', cas_deck='27', outer='40', dd_cas='0', cas_t='0', bow_st_s='50')
     PSSC719 = dict(name='Oquendo', citadel='110', bow_st='25', cas='27', cas_deck='27', outer='40', dd_cas='0', cas_t='0', bow_st_s='50')
@@ -435,6 +440,8 @@ class EnumVIII:
     #           ——————————————————     Spain     ——————————————————
     #           ——————————————————  Netherlands  ——————————————————
     #           ——————————————————     Europe    ——————————————————
+    PWSB018 = dict(name='Enigheten', citadel='280', bow_st='32', cas='50', cas_deck='40', outer='0', dd_cas='0', cas_t='0', bow_st_s='32-280', bow_st_n='32-280')
+    PWSB718 = dict(name='Turgut Reis', citadel='305', bow_st='32', cas='32', cas_deck='32', outer='32', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————  Pan-America  ——————————————————
     PVSB018 = dict(name='Ipiranga', citadel='356-305', bow_st='32', cas='51', cas_deck='51-32', outer='32', dd_cas='0', cas_t='0', bow_st_s='0')
     PVSB508 = dict(name='Atlantico', citadel='356-280', bow_st='32', cas='152', cas_deck='51', outer='0', dd_cas='0', cas_t='0', bow_st_s='32-152', bow_st_n='32-305')
@@ -516,6 +523,7 @@ class EnumVIII:
     PZSC108 = dict(name='Harbin', citadel='100', bow_st='16', cas='16', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PZSC508 = dict(name='Irian', citadel='100', bow_st='25', cas='25', cas_deck='27', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PZSC518 = dict(name='Wukong', citadel='100', bow_st='25', cas='27', cas_deck='27', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
+    PZSC718 = dict(name='Narai', citadel='83', bow_st='25', cas='25-83', cas_deck='27-51', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PZSC908 = dict(name='Pinata Irian', citadel='100', bow_st='25', cas='25', cas_deck='27', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
 
     #       ——————————————————    DD    ——————————————————
@@ -614,6 +622,7 @@ class EnumVII:
     #           ——————————————————     Spain     ——————————————————
     #           ——————————————————  Netherlands  ——————————————————
     #           ——————————————————     Europe    ——————————————————
+    PWSB017 = dict(name='Chios',  citadel='300-225', bow_st='26', cas='150-26', cas_deck='50-26', outer='0', dd_cas='0', cas_t='0', bow_st_s='30-120', bow_st_n='26-100')
     PWSB707 = dict(name='Lugdunum',  citadel='300-190', bow_st='26', cas='180-26', cas_deck='30', outer='30', dd_cas='0', cas_t='0', bow_st_s='180', bow_st_n='26-120')
     #           ——————————————————  Pan-America  ——————————————————
     #           ——————————————————    Pan-Asia   ——————————————————
@@ -760,6 +769,7 @@ class EnumVI:
     #           ——————————————————     Spain     ——————————————————
     #           ——————————————————  Netherlands  ——————————————————
     #           ——————————————————     Europe    ——————————————————
+    PWSB016 = dict(name='Laudon', citadel='310', bow_st='26', cas='150', cas_deck='36', outer='26', dd_cas='0', cas_t='0', bow_st_s='40-140', bow_st_n='26-200')
     #           ——————————————————  Pan-America  ——————————————————
     #           ——————————————————    Pan-Asia   ——————————————————
 
@@ -886,6 +896,7 @@ class EnumV:
     #           ——————————————————     Spain     ——————————————————
     #           ——————————————————  Netherlands  ——————————————————
     #           ——————————————————     Europe    ——————————————————
+    PWSB015 = dict(name='Tegetthoff', citadel='280-225', bow_st='19', cas='180', cas_deck='30', outer='26', dd_cas='0', cas_t='0', bow_st_s='110-150', bow_st_n='19-150')
     PWSB504 = dict(name='Viribus Unitis', citadel='280-225', bow_st='19', cas='180', cas_deck='30', outer='0', dd_cas='0', cas_t='0', bow_st_s='110-150', bow_st_n='19-150')
     #           ——————————————————  Pan-America  ——————————————————
     PVSB505 = dict(name='Rio de Janeiro', citadel='152-229', bow_st='19', cas='152', cas_deck='38', outer='0', dd_cas='0', cas_t='0', bow_st_s='102', bow_st_n='102')
@@ -993,6 +1004,7 @@ class EnumIV:
     #           ——————————————————     Spain     ——————————————————
     #           ——————————————————  Netherlands  ——————————————————
     #           ——————————————————     Europe    ——————————————————
+    PWSB014 = dict(name='Sultan Selim', citadel='270-200', bow_st='19', cas='19-200', cas_deck='19-35', outer='0', dd_cas='0', cas_t='0', bow_st_s='80-120', bow_st_n='19-100')
     #           ——————————————————  Pan-America  ——————————————————
     #           ——————————————————    Pan-Asia   ——————————————————
 
