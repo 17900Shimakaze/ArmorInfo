@@ -303,6 +303,7 @@ class EnumIX:
     #           ——————————————————      U.K.     ——————————————————
     PBSC109 = dict(name='Neptune', citadel='102', bow_st='16', cas='16', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PBSC209 = dict(name='Drake', citadel='177', bow_st='25', cas='27', cas_deck='30', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
+    PBSC719 = dict(name='Aberdeen', citadel='114', bow_st='16', cas='19-114', cas_deck='19-51', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PBSC909 = dict(name='Cursed Fang', citadel='102', bow_st='16', cas='16', cas_deck='16', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     #           ——————————————————  Commonwealth ——————————————————
     PUSC019 = dict(name='Encounter', citadel='152', bow_st='25', cas='27', cas_deck='27', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
@@ -686,6 +687,7 @@ class EnumVII:
     PISC517 = dict(name='F.Ferruccio', citadel='52', bow_st='16', cas='16-20', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     PISC607 = dict(name='Gorizia', citadel='150', bow_st='16', cas='30-25', cas_deck='25', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     PISC707 = dict(name='F.Ferruccio Roma', citadel='52', bow_st='16', cas='16-20', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
+    PISC717 = dict(name='Fiume', citadel='150', bow_st='16', cas='30-25', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     PISC897 = dict(name='AL Gorizia', citadel='150', bow_st='16', cas='30-25', cas_deck='25', dd_cas='0', cas_t='0', bow_st_s='0', bow_st_n='0')
     #           ——————————————————     Spain     ——————————————————
     PSSC107 = dict(name='Asturias', citadel='150', bow_st='16', cas='30-25', cas_deck='25', outer='0', dd_cas='0', cas_t='0', bow_st_s='50', bow_st_n='50')
