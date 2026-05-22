@@ -431,13 +431,16 @@ class EnumVIII:
     PGSB528 = dict(name='Anhalt', citadel='350-260', bow_st='32', cas='170-250', cas_deck='50', outer='0', dd_cas='0', cas_t='0', bow_st_s='27-200')
     PGSB538 = dict(name='Brandenburg B', citadel='350', bow_st='32', cas='145', cas_deck='50-80', outer='0', dd_cas='0', cas_t='0', bow_st_s='60')
     PGSB598 = dict(name='Tirpitz B', citadel='315-240', bow_st='32', cas='160', cas_deck='50', outer='0', dd_cas='0', cas_t='0', bow_st_s='60')
+    PGSB708 = dict(name='Bismarck 41', citadel='320-245', bow_st='32', cas='160', cas_deck='50', outer='0', dd_cas='0', cas_t='0', bow_st_s='60')
     PGSB818 = dict(name='BA Tirpitz', citadel='315-240', bow_st='32', cas='160', cas_deck='50', outer='0', dd_cas='0', cas_t='0', bow_st_s='60')
     PGSB898 = dict(name='AL Bismarck', citadel='320-245', bow_st='32', cas='160', cas_deck='50', outer='0', dd_cas='0', cas_t='0', bow_st_s='60')
     PGSB908 = dict(name='Wahnsinn', citadel='350-260', bow_st='27', cas='170', cas_deck='32', outer='0', dd_cas='0', cas_t='0', bow_st_s='60')
+    PGSB928 = dict(name='Bismarck Golden', citadel='320-245', bow_st='32', cas='160', cas_deck='50', outer='0', dd_cas='0', cas_t='0', bow_st_s='60')
     #           ——————————————————      U.K.     ——————————————————
     PBSB108 = dict(name='Monarch', citadel='381-235', bow_st='32', cas='32', cas_deck='32', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PBSB208 = dict(name='Hawke', citadel='305-76', bow_st='25', cas='32', cas_deck='32', outer='32', dd_cas='0', cas_t='0', bow_st_s='0')
     PBSB508 = dict(name='Vanguard', citadel='356-229', bow_st='32', cas='32', cas_deck='32', outer='0', dd_cas='0', cas_t='0', bow_st_s='32-64')
+    PBSB708 = dict(name='Prince of Wales', citadel='381-235', bow_st='25', cas='32', cas_deck='32', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     #           ——————————————————  Commonwealth ——————————————————
     #           ——————————————————     France    ——————————————————
     PFSB108 = dict(name='Richelieu', citadel='330-250', bow_st='32', cas='32', cas_deck='32', outer='32', dd_cas='0', cas_t='0', bow_st_s='0')
