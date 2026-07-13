@@ -1,0 +1,235 @@
+(def constant TT_ARMORINFO_INSTALLED true)
+(def constant ARMORINFO_ELEMENT_NAME 'armorInfo')
+(def constant ARMORINFO_DATA_KEY 'ArmorInfoModEntityKey')
+
+(def constant ARMORINFO_PREFS {
+	SCALE: {min: 0.5, max: 1.5, step: 0.1, renderer: "TT_CONFIG_RENDERERS.SLIDER", titleColor: "SC.Ui_styles.SERVICE_COLORS.WHITE", configTitle: 'IDS_TT_UI_SCALE', key: 'armorInfoScale', default: 1},
+	DISABLE_DRAGDROP: {renderer: "TT_CONFIG_RENDERERS.SWITCH", titleColor: "SC.Ui_styles.SERVICE_COLORS.WHITE", configTitle: 'IDS_TT_DISABLE_DRAG_DROP', key: 'armorInfoDisableDragDrop', tooltipHint: 'IDS_TT_HINT_DISABLE_DRAG_DROP', default: false},
+	RESET_POSITION: {min: 0, max: 0, step: 1, renderer: "TT_CONFIG_RENDERERS.BUTTON", titleColor: "SC.Ui_styles.SERVICE_COLORS.WHITE", configTitle: 'IDS_TT_DRAGDROP_RESET', key: '', tooltipHint: 'IDS_TT_HINT_DRAGDROP_RESET', default: 0, extraData: [{type: 'inputMapping.onAction', name: 'clearUserPref', args: {'name': 'chatBoxWidth', 'subName': 'armorInfo_positionX'}}, {type: 'inputMapping.onAction', name: 'clearUserPref', args: {'name': 'chatBoxWidth', 'subName': 'armorInfo_positionY'}}]},
+	BACKGROUND_ALPHA: {min: 0, max: 1, step: 0.1, renderer: "TT_CONFIG_RENDERERS.SLIDER", titleColor: "SC.Ui_styles.SERVICE_COLORS.WHITE", configTitle: 'IDS_TT_OPACITY', key: 'armorInfoBackgroundOpacity', default: 0.4}
+})
+
+(def constant ARMORINFO_CONFIGS [
+	{
+		sectionTitle: 'IDS_TT_TITLE_GENERAL',
+		sectionElements: "[ARMORINFO_PREFS.SCALE, ARMORINFO_PREFS.DISABLE_DRAGDROP, ARMORINFO_PREFS.RESET_POSITION]"
+	},
+	{
+		sectionTitle: 'IDS_TT_TITLE_BACKGROUND',
+		sectionElements: "[ARMORINFO_PREFS.BACKGROUND_ALPHA]"
+	}
+])
+
+(def constant ARMORINFO_CONFIG_DATA {
+	modName: 'Armor Info',
+	modTag: 'ARMORINFO',
+	configSections: "ARMORINFO_CONFIGS",
+	isInstalled: true
+})
+
+(def css $ArmorInfoTextStyle()
+	(extends $TextDefaultNM)
+	(extends $FontEnableReadability)
+	(filters
+		(dropShadow
+			(distance = 1)
+			(angle = 90)
+			(color = 0x08222a)
+			(alpha = 0.5)
+			(blurX = 2.0)
+			(blurY = 2.0)
+			(strength = 1.0)
+			(quality = 2)
+		)
+	)
+)
+
+(def element ArmorInfoModElement() layout=true
+	(scope
+		(macro STAGE_SIZE)
+	)
+
+	(style
+		(bind width "stageWidth")
+		(bind height "stageHeight")
+	)
+
+	(element ArmorInfoFloatingWindow)
+)
+
+(def element ArmorInfoFloatingWindow() layout=true
+	(scope
+		(macro TT_GET_USERPREF)
+		(macro TT_GET_PREF_NUMBER _varName="'windowScale'" _pref="ARMORINFO_PREFS.SCALE")
+		(macro TT_GET_PREF_NUMBER _varName="'backgroundAlpha'" _pref="ARMORINFO_PREFS.BACKGROUND_ALPHA")
+		(macro TT_GET_PREF_BOOL _varName="'isPositionLocked'" _pref="ARMORINFO_PREFS.DISABLE_DRAGDROP")
+
+		(var modDataEntityWatcher:gfx = "$datahub.getPrimWatcher(CC.mods_DataComponent, ARMORINFO_DATA_KEY)")
+		(var modDataEntity:gfx = "modDataEntityWatcher.entity" (event "modDataEntityWatcher.event"))
+		(var modDataComponent:gfx = "modDataEntity && modDataEntity.hasComponent(CC.mods_DataComponent) ? modDataEntity.mods_DataComponent : null" (event "modDataEntity.evAdded"))
+		(var modData:dict = "modDataComponent ? modDataComponent.data : {}" (event "modDataComponent.evDataChanged"))
+
+		(var shipType:str = "modData && 'shipType' in modData ? modData.shipType : ''")
+		(var shipIDS:str = "modData && 'shipIDS' in modData ? modData.shipIDS : ''")
+		(var citadel:str = "modData && 'citadel' in modData ? modData.citadel : 'N/A'")
+		(var bowStern:str = "modData && 'bow_st' in modData ? modData.bow_st : 'N/A'")
+		(var bowBelt:str = "modData && 'bow_st_s' in modData ? modData.bow_st_s : 'N/A'")
+		(var casemate:str = "modData && 'cas' in modData ? modData.cas : 'N/A'")
+		(var deck:str = "modData && 'cas_deck' in modData ? modData.cas_deck : 'N/A'")
+		(var outer:str = "modData && 'outer' in modData ? modData.outer : 'N/A'")
+		(var destroyerCasemate:str = "modData && 'dd_cas' in modData ? modData.dd_cas : 'N/A'")
+		(var carrierHangar:str = "modData && 'cas_t' in modData ? modData.cas_t : 'N/A'")
+
+		(macro STAGE_SIZE)
+		(var defaultPos:dict = "{positionX: 400, positionY: max(20, stageHeight - 280)}")
+		(macro DRAGGABLE_GET_DROP_POSITION _elementName="ARMORINFO_ELEMENT_NAME" _defaultPosition="defaultPos")
+	)
+
+	(bind visible "shipIDS != ''")
+
+	(style
+		(position = "absolute")
+		(bind left "dragPosX")
+		(bind top "dragPosY")
+	)
+
+	(block
+		(style
+			(bind scaleX "windowScale")
+			(bind scaleY "windowScale")
+		)
+
+		(controller $Instance renderer='ModDraggableElement'
+			(bind enabled "!isPositionLocked")
+			(args
+				_elementName="ARMORINFO_ELEMENT_NAME"
+				_defaultPosition="defaultPos"
+			)
+		)
+
+		(block
+			(style
+				(width = 280px)
+				(hitTest = false)
+			)
+
+			(mc contrast_panel
+				(class $FullsizeAbsolute)
+				(style
+					(bind alpha "backgroundAlpha")
+				)
+			)
+
+			(block
+				(style
+					(width = 100%)
+					(padding = 10px)
+					(vgap = 3px)
+				)
+
+				(tf
+					(class $TextDefaultBoldNM)
+					(style
+						(width = 260px)
+						(fontSize = 20)
+						(textColor = 0xFFFFFF)
+					)
+					(bind text "tr(shipIDS)")
+				)
+
+				(element ArmorInfoRow _visible="citadel != 'N/A'" _label="tr('IDS_ARMOUR_TYPE_CITADEL')" _value="citadel")
+				(element ArmorInfoRow _visible="casemate != 'N/A'" _label="tr('IDS_ARMOUR_TYPE_CAS')" _value="casemate")
+				(element ArmorInfoRow _visible="casemate != 'N/A' && shipType == 'AirCarrier'" _label="tr('IDS_AC_SSC_HANG')" _value="carrierHangar")
+				(element ArmorInfoRow _visible="deck != 'N/A'" _label="shipType == 'AirCarrier' ? tr('IDS_AC_SSC_FDCK') : tr('IDS_ARMOR_CAS_DECK')" _value="deck")
+				(element ArmorInfoRow _visible="bowStern != 'N/A' && (shipType == 'Destroyer' ? destroyerCasemate != 'N/A' : true)" _label="tr('IDS_ARMOUR_TYPE_BOW_ST')" _value="bowStern")
+				(element ArmorInfoRow _visible="bowBelt != 'N/A'" _label="tr('IDS_BOW_BELT')" _value="bowBelt")
+				(element ArmorInfoRow _visible="outer != 'N/A'" _label="tr('IDS_ARMOUR_TYPE_OUTER')" _value="outer")
+				(element ArmorInfoRow _visible="destroyerCasemate != 'N/A'" _label="tr('IDS_DD_CAS_BELT')" _value="destroyerCasemate")
+				(element ArmorInfoRow _visible="bowStern != 'N/A' && (shipType == 'Destroyer' || shipType == 'Submarine') && destroyerCasemate == 'N/A'" _label="tr('IDS_ARMOUR_TYPE_BOW_ST')" _value="bowStern")
+			)
+		)
+
+	)
+
+	(element ArmorInfoConfigButton
+		(style
+			(position = "absolute")
+			(left = -30px)
+			(top = 0px)
+		)
+	)
+)
+
+(def element ArmorInfoRow(_visible:bool=true, _label:str='', _value:str='') layout=true
+	(bind visible "_visible")
+
+	(hblock
+		(style
+			(width = 260px)
+			(height = 20px)
+			(align = "left|middle")
+		)
+		(tf
+			(class $ArmorInfoTextStyle)
+			(style
+				(width = 180px)
+				(fontSize = 18)
+				(textColor = 0xE9967A)
+			)
+			(bind text "_label")
+		)
+		(tf
+			(class $ArmorInfoTextStyle)
+			(style
+				(width = 80px)
+				(fontSize = 18)
+				(textAlign = "right")
+				(textColor = 0xE9967A)
+			)
+			(bind text "_value")
+		)
+	)
+)
+
+(def element ArmorInfoConfigTooltip()
+	(scope
+		(macro TT_GET_USERPREF)
+	)
+
+	(element TT_BackgroundElement)
+	(element TT_ModConfigsElement
+		_modConfigsData="ARMORINFO_CONFIG_DATA"
+		_userPrefsNum="_userPrefsNum"
+	)
+)
+
+(def element ArmorInfoConfigButton() layout=true
+	(scope
+		(event evHideInfotip)
+		(var mouse:gfx = "$datahub.getSingleComponent(CC.mouse)")
+		(var isMouseActive:bool = "mouse.active" (event "mouse.evActiveChanged"))
+		(dispatch evHideInfotip args="{}" (bind trigger "isMouseActive"))
+
+		(event evItemChooserOpened)
+		(event evItemChooserClosed)
+		(var isChooserOpen:bool = false watch=false)
+		(bind isChooserOpen "true" watch=false init=false (event "evItemChooserOpened"))
+		(bind isChooserOpen "false" watch=false init=false (event "evItemChooserClosed"))
+	)
+
+	(style
+		(width = 30px)
+		(height = 30px)
+		(align = "middle|center")
+	)
+
+	(controller $Tooltip
+		(renderer='ArmorInfoConfigTooltip')
+		(macro TT_CONFIG_BEHAVIOUR)
+	)
+
+	(element ButtonSettingsSmall
+		(bind visible "isMouseActive")
+		(alpha = 0.7)
+	)
+)
