@@ -46,6 +46,7 @@ class EnumX:
     PISB110 = dict(name='C.Colombo', citadel='375', bow_st='32', cas='70-150', cas_deck='50', outer='0', dd_cas='0', cas_t='0', bow_st_s='60')
     PISB510 = dict(name='Lauria', citadel='350-457', bow_st='32', cas='32-150', cas_deck='32-170', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PISB710 = dict(name='Sicilia', citadel='375', bow_st='32', cas='70-150', cas_deck='50', outer='0', dd_cas='0', cas_t='0', bow_st_s='60')
+    PISB720 = dict(name='Conte Verde', citadel='350-457', bow_st='32', cas='32-150', cas_deck='32-170', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PISB810 = dict(name='Cyber Lauria', citadel='350-457', bow_st='32', cas='32-150', cas_deck='32-170', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     #           ——————————————————     Spain     ——————————————————
     #           ——————————————————  Netherlands  ——————————————————
@@ -145,6 +146,7 @@ class EnumX:
     PJSD012 = dict(name='Shimakaze', citadel='0', bow_st='19', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PJSD210 = dict(name='Harugumo', citadel='0', bow_st='19', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PJSD510 = dict(name='Hayate', citadel='0', bow_st='19', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
+    PJSD710 = dict(name='Fuyutsuki', citadel='0', bow_st='19', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PJSD890 = dict(name='AL Shimakaze', citadel='0', bow_st='19', cas='0', cas_deck='0', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     #           ——————————————————    U.S.S.R    ——————————————————
     PRSD110 = dict(name='Khabarovsk', citadel='0', bow_st='19', cas='0', cas_deck='0', outer='0', dd_cas='50', cas_t='0', bow_st_s='0')
@@ -1343,6 +1345,7 @@ class EnumEX:
     PGSB111 = dict(name='Hannover', citadel='420-360', bow_st='32', cas='180', cas_deck='50', outer='0', dd_cas='0', cas_t='0', bow_st_s='60-150')
     PBSB111 = dict(name='Devastation', citadel='432-369', bow_st='32', cas='32', cas_deck='32', outer='0', dd_cas='0', cas_t='0', bow_st_s='63')
     PFSB111 = dict(name='Patrie', citadel='420', bow_st='32', cas='32', cas_deck='32', outer='32', dd_cas='0', cas_t='0', bow_st_s='0')
+    PISB011 = dict(name='Affondatore', citadel='420', bow_st='32', cas='50-70', cas_deck='50-55', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
 
     PASC011 = dict(name='Jacksonville', citadel='152', bow_st='25', cas='25', cas_deck='30', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
     PASC111 = dict(name='Annapolis', citadel='170', bow_st='27', cas='30', cas_deck='30', outer='0', dd_cas='0', cas_t='0', bow_st_s='0')
